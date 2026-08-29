@@ -1,39 +1,67 @@
-# Contributing
+<div dir="rtl">
 
-Thank you for helping maintain this Persian programming-resource index.
+# راهنمای مشارکت در فهرست منابع رایگان برنامه‌نویسی فارسی
 
-## Resource acceptance criteria
+ممنون که به بهتر شدن این فهرست برای فارسی‌زبان‌ها کمک می‌کنید. هدف مشارکت، اضافه کردن لینک بیشتر به هر قیمت نیست؛ هدف، نگه داشتن یک catalog **مفید، دقیق، رایگان و با منشأ قابل توضیح** است.
 
-A proposed resource should:
+## چه منبعی قابل پذیرش است؟
 
-1. be relevant to programming, software engineering, computer science, or adjacent technical learning;
-2. be accessible without payment at the time of submission;
-3. link to the creator, publisher, official documentation project, educational platform, or another source with clearly established redistribution permission;
-4. have a concise, factual description without marketing superlatives;
-5. avoid requiring shared accounts, leaked credentials, cracked software, or security-control bypasses.
+منبع پیشنهادی بهتر است:
 
-## Do not submit
+1. به برنامه‌نویسی، مهندسی نرم‌افزار، علوم کامپیوتر یا یادگیری فنی مرتبط باشد؛
+2. در زمان ارسال بدون پرداخت قابل استفاده باشد؛
+3. فارسی باشد یا برای جامعه‌ی فارسی‌زبان ارزش آموزشی مشخصی داشته باشد؛
+4. به سازنده، ناشر، مستندات رسمی، پلتفرم آموزشی یا منبعی با اجازه‌ی انتشار روشن لینک شود؛
+5. عنوان و توضیحی دقیق و بدون ادعای تبلیغاتی داشته باشد؛
+6. تا حد امکان از canonical URL و بدون پارامترهای tracking غیرضروری استفاده کند.
 
-Do not add:
+## چه چیزی ارسال نکنیم؟
 
-- unauthorized scans or copies of commercial books;
-- ripped or leaked paid courses;
-- private Google Drive, Dropbox, Telegram, Mega, MediaFire, or similar mirrors unless the rights holder clearly uses that location as the official distribution channel;
-- credential/token sharing;
-- affiliate or referral links without explicit disclosure;
-- executable downloads whose provenance cannot be established.
+- اسکن یا کپی بدون مجوز کتاب تجاری
+- دوره‌ی پولی rip/leak شده
+- mirror خصوصی Google Drive، Dropbox، Telegram، Mega، MediaFire یا موارد مشابه، مگر اینکه صاحب اثر همان مسیر را به‌عنوان کانال رسمی انتشار معرفی کرده باشد
+- credential، token یا اکانت اشتراکی
+- crack، دور زدن paywall یا غیرفعال کردن کنترل‌های امنیتی
+- فایل اجرایی با منشأ نامشخص
+- affiliate/referral link بدون disclosure روشن
 
-When the licensing or free-distribution status is unclear, prefer linking to the author's or publisher's information page rather than to a downloadable copy.
+اگر وضعیت حقوقی یا رایگان بودن دانلود مشخص نیست، به‌جای لینک مستقیم فایل، صفحه‌ی نویسنده یا ناشر را پیشنهاد کنید.
 
-## Pull request checklist
+## منبع را کجا اضافه کنم؟
 
-Before opening a pull request:
+- کتاب و متن آموزشی → `کتاب‌ها/README.md`
+- دوره‌ی رایگان در پلتفرم آموزشی → `دوره‌ها/README.md`
+- playlist یا دوره‌ی مشخص YouTube → `دوره‌های آموزشی در یوتیوب/README.md`
+- کانال آموزشی YouTube → `کانال‌های یوتیوب/README.md`
 
-- place the resource in the most relevant existing category;
-- use a stable canonical URL where possible;
-- verify that the title and description match the linked resource;
-- remove tracking parameters when they are not needed for navigation;
-- do not add personal contact information or secrets;
-- run `python tests/content_contract.py` locally if you have Python 3 available.
+منبع را در نزدیک‌ترین دسته‌ی موجود قرار دهید. اگر دسته‌ی جدید واقعاً لازم است، نام آن را کوتاه و قابل جست‌وجو انتخاب کنید.
 
-The repository may remove links later if availability, ownership, licensing, safety, or quality changes.
+## چطور توضیح خوب بنویسم؟
+
+توضیح باید به کاربر بگوید منبع **چیست و درباره‌ی چه چیزی است**، نه اینکه «فوق‌العاده»، «بهترین» یا «بی‌نظیر» است.
+
+نمونه‌ی مناسب:
+
+> دوره‌ی مقدماتی Python با تمرکز بر syntax، ساختار داده و تمرین‌های پایه.
+
+## چک‌لیست Pull Request
+
+قبل از ارسال PR:
+
+- URL را باز کنید و مطمئن شوید هنوز کار می‌کند؛
+- رایگان بودن منبع را بررسی کنید؛
+- title و description را با محتوای مقصد تطبیق دهید؛
+- tracking parameter غیرضروری را حذف کنید؛
+- اطلاعات شخصی، secret یا credential اضافه نکنید؛
+- محتوای دارای حق نشر را داخل repository کپی نکنید؛
+- در صورت امکان `python tests/content_contract.py` را اجرا کنید.
+
+ممکن است منابع در آینده به دلیل تغییر دسترسی، مالکیت، مجوز، امنیت یا کیفیت حذف شوند.
+
+</div>
+
+---
+
+## English summary
+
+Contributions should prioritize Persian-language or Persian-community technical learning resources, use canonical/authorized links, and avoid unauthorized mirrors, leaked paid material, credentials, and unverifiable executable downloads.

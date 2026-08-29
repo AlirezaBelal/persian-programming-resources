@@ -43,20 +43,42 @@ for path in MARKDOWN_FILES:
         if pattern in lowered:
             errors.append(f"{rel}: unverified mirror domain found: {pattern}")
 
-    # A common broken-link pattern in this collection was a second URL pasted
-    # inside a Markdown destination. Keep that syntax from returning.
     if re.search(r"\]\([^\n)]*\(https?://", text, re.IGNORECASE):
         errors.append(f"{rel}: malformed nested URL in Markdown link")
 
 root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
 required_phrases = [
+    "# منابع رایگان برنامه‌نویسی فارسی",
+    "دوره رایگان پایتون فارسی",
+    "کتاب برنامه‌نویسی فارسی",
+    "سوالات متداول",
     "does not mirror, upload, or redistribute",
     "Curation principles",
     "Linked third-party resources are **not relicensed",
 ]
 for phrase in required_phrases:
     if phrase not in root_readme:
-        errors.append(f"README.md: missing repository boundary: {phrase}")
+        errors.append(f"README.md: missing content/SEO boundary: {phrase}")
+
+category_expectations = {
+    "کتاب‌ها/README.md": "# کتاب‌های رایگان برنامه‌نویسی فارسی",
+    "دوره‌ها/README.md": "# دوره‌های رایگان برنامه‌نویسی فارسی",
+    "دوره‌های آموزشی در یوتیوب/README.md": "# دوره‌های رایگان برنامه‌نویسی فارسی در یوتیوب",
+    "کانال‌های یوتیوب/README.md": "# کانال‌های یوتیوب فارسی برای آموزش برنامه‌نویسی",
+}
+for rel_path, heading in category_expectations.items():
+    text = (ROOT / rel_path).read_text(encoding="utf-8")
+    if heading not in text:
+        errors.append(f"{rel_path}: missing discoverable H1: {heading}")
+
+books = (ROOT / "کتاب‌ها/README.md").read_text(encoding="utf-8")
+if "و ساده برای فهم بهتر الگوریتم‌ها" in books:
+    errors.append("کتاب‌ها/README.md: orphaned algorithm description returned")
+
+courses = (ROOT / "دوره‌ها/README.md").read_text(encoding="utf-8")
+c_section = courses.split("### سی\n", 1)[1].split("### سی شارپ", 1)[0]
+if "جاواپرو" in c_section:
+    errors.append("دوره‌ها/README.md: Java course is miscategorized under C")
 
 license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
 if "MIT License" not in license_text:

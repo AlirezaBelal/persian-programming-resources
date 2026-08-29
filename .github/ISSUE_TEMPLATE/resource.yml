@@ -1,0 +1,59 @@
+name: پیشنهاد منبع فارسی
+description: پیشنهاد کتاب، دوره، ویدیو یا کانال آموزشی رایگان برای فارسی‌زبان‌ها
+title: "[Resource]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ممنون که به بهتر شدن فهرست منابع رایگان برنامه‌نویسی فارسی کمک می‌کنید. لطفاً به منبع اصلی یا صفحه‌ی رسمی انتشار لینک دهید.
+  - type: input
+    id: title
+    attributes:
+      label: عنوان منبع
+      placeholder: مثال: دوره مقدماتی پایتون
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: نوع منبع
+      options:
+        - کتاب یا منبع متنی
+        - دوره آموزشی
+        - دوره یا Playlist یوتیوب
+        - کانال یوتیوب
+        - سایر منابع فنی
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: لینک اصلی
+      description: Canonical URL یا صفحه رسمی سازنده/ناشر را وارد کنید.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: توضیح کوتاه
+      description: این منبع چه چیزی آموزش می‌دهد و برای چه سطحی مناسب است؟
+    validations:
+      required: true
+  - type: textarea
+    id: free_provenance
+    attributes:
+      label: چرا دسترسی رایگان و مجاز است؟
+      description: توضیح دهید منبع توسط سازنده، ناشر یا پلتفرم رسمی رایگان ارائه شده است.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: بررسی نهایی
+      options:
+        - label: لینک را باز کرده‌ام و در حال حاضر قابل دسترسی است.
+          required: true
+        - label: این پیشنهاد شامل crack، leak، credential یا mirror بدون مجوز نیست.
+          required: true

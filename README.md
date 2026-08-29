@@ -1,51 +1,133 @@
-# Persian Programming Resources
+<div dir="rtl">
 
-A curated index of **Persian-language programming and software-engineering learning resources** that can be accessed without payment from their creators, publishers, educational platforms, or other clearly authorized sources.
+# منابع رایگان برنامه‌نویسی فارسی 🇮🇷
 
-> This repository is a link directory. It does not mirror, upload, or redistribute third-party books, courses, videos, or other learning materials.
+### کتاب، دوره، یوتیوب و منابع یادگیری برنامه‌نویسی برای فارسی‌زبان‌ها
 
-## Resource index
+این مخزن یک فهرست منتخب و مرتب از **منابع رایگان برنامه‌نویسی فارسی** است؛ از کتاب و مستندات فارسی گرفته تا دوره‌های رایگان، آموزش‌های یوتیوب و کانال‌های آموزشی مناسب فارسی‌زبان‌ها.
 
-- [Books and written resources](کتاب‌ها/README.md)
-- [Courses](دوره‌ها/README.md)
-- [YouTube courses](دوره‌های%20آموزشی%20در%20یوتیوب/README.md)
-- [YouTube channels](کانال‌های%20یوتیوب/README.md)
+هدف این پروژه ساده است: اگر دنبال عباراتی مثل **دوره رایگان پایتون فارسی**، **آموزش جاوااسکریپت فارسی**، **کتاب برنامه‌نویسی فارسی**، **آموزش Git و Linux فارسی** یا **منابع هوش مصنوعی فارسی** هستید، بتوانید از یک نقطه‌ی قابل اعتماد شروع کنید و به منبع اصلی برسید.
 
-## Curation principles
+[![Content Integrity](https://github.com/AlirezaBelal/free-resources/actions/workflows/content-integrity.yml/badge.svg)](https://github.com/AlirezaBelal/free-resources/actions/workflows/content-integrity.yml)
 
-A resource should be listed only when its free availability is reasonably attributable to the creator, publisher, official documentation project, educational platform, or another source with clear redistribution permission.
+> این مخزن فایل کتاب، دوره یا محتوای متعلق به دیگران را میزبانی نمی‌کند. لینک‌ها تا حد امکان به سازنده، ناشر، مستندات رسمی، پلتفرم آموزشی یا منبعی با مجوز روشن برای دسترسی رایگان اشاره می‌کنند.
 
-This repository intentionally excludes:
+## دسترسی سریع به منابع
 
-- paywall bypasses, cracked courses, leaked credentials, or access-token sharing
-- unauthorized scans, mirrors, or downloadable copies of commercial material
-- private cloud-drive or messaging-app mirrors whose redistribution rights cannot be established
-- links that require users to disable security controls or run untrusted software
+| دنبال چه چیزی هستید؟ | صفحه‌ی پیشنهادی |
+| --- | --- |
+| 📚 کتاب و منابع متنی فارسی | [کتاب‌های رایگان برنامه‌نویسی فارسی](کتاب‌ها/README.md) |
+| 🎓 دوره‌های رایگان | [دوره‌های رایگان برنامه‌نویسی فارسی](دوره‌ها/README.md) |
+| ▶️ دوره‌های ویدیویی | [دوره‌های برنامه‌نویسی فارسی در یوتیوب](دوره‌های%20آموزشی%20در%20یوتیوب/README.md) |
+| 📺 مدرس‌ها و کانال‌ها | [کانال‌های یوتیوب فارسی برنامه‌نویسی](کانال‌های%20یوتیوب/README.md) |
 
-Availability and licensing can change over time. A listing means the resource met the repository's curation criteria when reviewed; it is not a guarantee of perpetual availability or an endorsement of every claim made by the linked provider.
+## برای شروع سریع
 
-## Contributing
+### پایتون
 
-Contributions are welcome. Before submitting a resource, read [CONTRIBUTING.md](CONTRIBUTING.md) and include enough provenance to show why the resource is legitimately available for free.
+اگر به‌دنبال **آموزش رایگان پایتون به زبان فارسی** هستید:
 
-For broken links, misleading descriptions, duplicate entries, or licensing concerns, open a GitHub issue or pull request without reposting copyrighted material in the repository.
+- [دوره‌های پایتون فارسی](دوره‌ها/README.md#پایتون)
+- [کتاب‌ها و منابع متنی پایتون](کتاب‌ها/README.md#پایتون)
+- [دوره‌های پایتون در یوتیوب](دوره‌های%20آموزشی%20در%20یوتیوب/README.md#پایتون)
 
-## Repository scope
+### توسعه وب و جاوااسکریپت
 
-This project is primarily a **content-curation and community-maintenance** repository rather than an application. Its engineering controls focus on repository hygiene, link provenance, contribution quality, and preventing accidental inclusion of sensitive data or suspicious download sources.
+برای HTML، CSS، JavaScript، React، Node.js، PHP و Laravel:
 
-## License
+- [دوره‌های توسعه وب فارسی](دوره‌ها/README.md)
+- [کتاب‌ها و منابع جاوااسکریپت](کتاب‌ها/README.md#جاوااسکریپت)
+- [آموزش‌های جاوااسکریپت در یوتیوب](دوره‌های%20آموزشی%20در%20یوتیوب/README.md#جاوااسکریپت)
 
-The repository's original curation text and repository metadata are provided under the [MIT License](LICENSE). Linked third-party resources are **not relicensed by this repository**; each resource remains subject to its own copyright, license, and terms of use.
+### مهندسی نرم‌افزار، Git و Linux
+
+- [منابع Git](کتاب‌ها/README.md#گیت)
+- [دوره‌های Git](دوره‌ها/README.md#گیت)
+- [کتاب‌ها و منابع Linux](کتاب‌ها/README.md#لینوکس)
+- [دوره‌های Linux](دوره‌ها/README.md#لینوکس)
+
+### هوش مصنوعی و یادگیری ماشین
+
+- [کتاب و منبع فارسی هوش مصنوعی](کتاب‌ها/README.md#هوش-مصنوعی)
+- [کانال‌های فارسی با محتوای هوش مصنوعی](کانال‌های%20یوتیوب/README.md)
+
+## چه چیزهایی در این مخزن پیدا می‌کنید؟
+
+این فهرست برای دانشجوها، برنامه‌نویس‌های تازه‌کار، توسعه‌دهنده‌هایی که می‌خواهند مهارت جدید یاد بگیرند و هر فارسی‌زبانی که دنبال منابع فنی رایگان است ساخته شده است. موضوعات موجود شامل مواردی مانند Python، JavaScript، Java، C/C++، C#، PHP، React، Node.js، Django، Laravel، Git، Linux، الگوریتم، ساختمان داده، شبکه، DevOps، هوش مصنوعی و مهندسی نرم‌افزار است.
+
+## چرا این فهرست متفاوت است؟
+
+- **فارسی‌محور:** زبان و نیاز کاربر فارسی‌زبان نقطه‌ی شروع ساختار مخزن است.
+- **منبع اصلی قبل از mirror:** تا حد امکان لینک به سازنده، ناشر یا پلتفرم اصلی داده می‌شود.
+- **رایگان با منشأ قابل توضیح:** رایگان بودن به معنی مجاز بودن هر mirror یا کپی نیست.
+- **دسته‌بندی‌شده برای جست‌وجوی سریع:** کتاب، دوره، آموزش یوتیوب و کانال آموزشی از هم جدا شده‌اند.
+- **قابل نگه‌داری:** CI ساختار Markdown، policyهای محتوا و برخی خطاهای رایج را بررسی می‌کند.
+
+## معیار پذیرش منابع
+
+یک منبع زمانی مناسب این فهرست است که:
+
+1. به برنامه‌نویسی، علوم کامپیوتر، مهندسی نرم‌افزار یا یادگیری فنی مرتبط باشد؛
+2. هنگام بررسی بدون پرداخت قابل دسترسی باشد؛
+3. ترجیحاً فارسی باشد یا برای جامعه‌ی فارسی‌زبان ارزش آموزشی مشخصی داشته باشد؛
+4. از سازنده، ناشر، پروژه‌ی مستندات رسمی یا یک پلتفرم معتبر قابل دسترسی باشد؛
+5. برای دریافت آن نیازی به credential لو‌رفته، crack، دور زدن paywall یا اجرای فایل ناشناس نباشد.
+
+## چه چیزهایی عمداً اضافه نمی‌شوند؟
+
+- اسکن یا کپی بدون مجوز از کتاب تجاری
+- دوره‌ی پولی leak یا rip شده
+- اکانت، token، credential یا روش دور زدن محدودیت پرداخت
+- mirrorهای نامشخص در سرویس‌های فایل یا پیام‌رسان
+- فایل اجرایی با منشأ نامعلوم
+- لینک affiliate بدون disclosure روشن
+
+## سوالات متداول
+
+### آیا همه‌ی منابع این مخزن رایگان هستند؟
+
+هدف فهرست، معرفی منابعی است که در زمان بررسی **بدون پرداخت** در دسترس بوده‌اند. ممکن است مدل دسترسی بعضی سرویس‌ها در آینده تغییر کند؛ در این حالت issue یا pull request برای اصلاح لینک کمک بزرگی است.
+
+### آیا همه‌ی منابع فارسی هستند؟
+
+تمرکز اصلی مخزن روی **منابع آموزش برنامه‌نویسی برای فارسی‌زبان‌ها** است. بیشتر موارد فارسی‌اند؛ بعضی منابع آزاد غیرفارسی فقط زمانی نگه داشته می‌شوند که در یک دسته‌ی فنی مشخص ارزش آموزشی واضح داشته باشند.
+
+### بهترین مسیر برای یادگیری برنامه‌نویسی از صفر چیست؟
+
+برای شروع، یک زبان مثل Python یا JavaScript را انتخاب کنید، یک دوره‌ی مقدماتی از بخش [دوره‌ها](دوره‌ها/README.md) بردارید و هم‌زمان از یک کتاب یا منبع متنی در بخش [کتاب‌ها](کتاب‌ها/README.md) برای مرور مفاهیم استفاده کنید. بعد از مبانی، Git، الگوریتم و ساخت پروژه‌های کوچک را اضافه کنید.
+
+### آیا می‌توانم منبع جدید معرفی کنم؟
+
+بله. [راهنمای مشارکت](CONTRIBUTING.md) را بخوانید و منبع را با URL اصلی، دسته‌بندی مناسب و توضیحی کوتاه درباره‌ی رایگان و مجاز بودن دسترسی پیشنهاد دهید.
+
+### اگر یک لینک خراب یا دیگر رایگان نباشد چه کار کنم؟
+
+یک issue یا pull request باز کنید. هدف این است که فهرست به‌مرور تمیز، قابل اعتماد و به‌روز بماند.
+
+## مشارکت در پروژه
+
+پیشنهاد منبع جدید، اصلاح دسته‌بندی، گزارش لینک خراب و بهبود توضیحات همگی استقبال می‌شوند. قبل از مشارکت، [CONTRIBUTING.md](CONTRIBUTING.md) را مطالعه کنید.
+
+اگر منبعی را پیشنهاد می‌کنید، بهتر است **canonical URL** یا صفحه‌ی رسمی سازنده/ناشر را بدهید و توضیح دهید چرا دسترسی رایگان آن مشروع است.
+
+## درباره‌ی مجوز و حقوق منابع
+
+مجوز MIT فقط شامل متن و metadata اصلی همین repository است. لینک‌های خارجی، کتاب‌ها، دوره‌ها و ویدیوها تحت حق نشر و شرایط استفاده‌ی صاحبان خودشان باقی می‌مانند.
+
+## کلیدواژه‌های موضوعی
+
+Python · JavaScript · Java · C · C++ · C# · PHP · React · Node.js · Django · Laravel · Git · Linux · DevOps · AI · Algorithms · Data Structures · Software Engineering
+
+</div>
 
 ---
 
-<div dir="rtl">
+## Repository policy (English)
 
-## توضیح فارسی
+This repository is a curated directory for Persian-speaking learners. It **does not mirror, upload, or redistribute** third-party books, paid courses, videos, or other copyrighted learning material.
 
-این مخزن یک فهرست منتخب از منابع فارسی آموزش برنامه‌نویسی است. فایل کتاب، دوره یا محتوای متعلق به اشخاص ثالث در این مخزن میزبانی نمی‌شود و هدف، ارجاع به منابعی است که از مسیر رسمی یا با مجوز روشن به‌صورت رایگان در دسترس قرار گرفته‌اند.
+### Curation principles
 
-برای پیشنهاد منبع جدید، ابتدا [راهنمای مشارکت](CONTRIBUTING.md) را مطالعه کنید.
+Resources should point to creators, publishers, official documentation projects, educational platforms, or other sources where free availability can be reasonably established. Unauthorized mirrors, leaked credentials, paywall bypasses, and cracked material are excluded.
 
-</div>
+Linked third-party resources are **not relicensed by this repository**; they remain subject to their own copyright, license, and terms of use.
