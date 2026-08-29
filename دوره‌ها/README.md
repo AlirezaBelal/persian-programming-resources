@@ -38,7 +38,7 @@
 ### جاوا
 
 - [جاواکاپ: آموزش رایگان جاوا](https://javacup.ir/javacup-training-videos/)
-- [جاواپرو: بی‌نظیرترین آموزش رایگان صفر تا پیشرفته جاوا](https://javapro.ir/%D8%A8%DB%8C-%D9%86%D8%B8%DB%8C%D8%B1%D8%AA%D8%B1%DB%8C%D9%86-%D8%A7%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D8%B5%D9%81%D8%B1-%D8%AA%D8%A7-%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87-%D8%AC%D8%A7%Dوا (https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)
+- [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)
 - [سریع آسان: آموزش جاوا](https://sariasan.com/java/arrays/java-free-full-lessons/)
 - [کدیاد: آموزش جاوا](https://codeyad.com/course/2023/آموزش-رایگان-جاوا-به-زبان-ساده-java)
 - [روکسو: آموزش جاوا](https://www.roxo.ir/introduction-and-history-of-java)
@@ -81,7 +81,7 @@
 - [خوش آموز: آموزش زبان برنامه‌نویسی C](https://khoshamoz.ir/index.php/post1386)
 - [سریع آسان: آموزش برنامه‌نویسی سی](https://sariasan.com/c-2/c-programming-free-full-lessons/)
 - [تاپ لرن: آموزش رایگان زبان C](https://toplearn.com/courses/windows/آموزش-رایگان-زبان-c)
-- [جاواپرو: آموزش زبان برنامه‌نویسی C](https://javapro.ir/آموزش-زبان-برنامه‌نویسی-C)
+- [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)
 - [مکتب‌خونه: اصول برنامه‌نویسی C و C++](https://maktabkhooneh.org/course/اصول-برنامه‌نویسی-c-و-c-mk68/)
 
 ### سی شارپ
