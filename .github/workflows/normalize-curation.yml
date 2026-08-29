@@ -1,0 +1,58 @@
+name: Normalize curated resources
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/normalize-curation.yml
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Normalize known catalog issues
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          books = Path('کتاب‌ها/README.md')
+          text = books.read_text(encoding='utf-8')
+          lines = []
+          for line in text.splitlines():
+              if 't.me/jadivarlog/24' in line:
+                  continue
+              if '[کد تمیز در جاوااسکریپت]' in line and 'clean-code-python' in line:
+                  line = '1. [کد تمیز در جاوااسکریپت](https://github.com/MoeinMirkiani/clean-code-javascript-fa): راهنمای فارسی اصول کدنویسی تمیز در جاوااسکریپت.'
+              lines.append(line)
+          books.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          courses = Path('دوره‌ها/README.md')
+          text = courses.read_text(encoding='utf-8')
+          lines = []
+          for line in text.splitlines():
+              if line.startswith('- [جاواپرو:'):
+                  line = '- [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)'
+              lines.append(line)
+          courses.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+
+      - name: Run content contract
+        run: python tests/content_contract.py
+
+      - name: Commit normalized catalog
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'کتاب‌ها/README.md' 'دوره‌ها/README.md'
+          if git diff --cached --quiet; then
+            echo 'No catalog changes required.'
+          else
+            git commit -m 'content: remove unverifiable mirror and repair resource links'
+            git push origin HEAD:master
+          fi
