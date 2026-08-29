@@ -1,0 +1,44 @@
+name: Content Integrity
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  content-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run content contract
+        run: python tests/content_contract.py
+
+      - name: Check Markdown whitespace
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          errors = []
+          for path in Path('.').rglob('*.md'):
+              text = path.read_text(encoding='utf-8')
+              for lineno, line in enumerate(text.splitlines(), 1):
+                  if line.rstrip() != line:
+                      errors.append(f'{path}:{lineno}: trailing whitespace')
+          if errors:
+              print('\n'.join(errors), file=sys.stderr)
+              raise SystemExit(1)
+          PY
