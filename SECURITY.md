@@ -1,6 +1,6 @@
 # Security and Content Integrity
 
-This repository is a public link directory, not a deployed application or package with versioned security support.
+`persian-programming-resources` is a public, Persian-first link directory, not a deployed application or package with versioned security support.
 
 ## Reportable issues
 
