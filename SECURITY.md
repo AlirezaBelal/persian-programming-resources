@@ -1,24 +1,20 @@
-# Security Policy
+# Security and Content Integrity
 
-## Supported Versions
+This repository is a public link directory, not a deployed application or package with versioned security support.
 
-Use this section to inform users about which versions of your project are
-currently receiving security updates.
+## Reportable issues
 
-| Version | Supported          |
-|---------|--------------------|
-| 2.1.x   | :white_check_mark: |
-| 2.0.x   | :white_check_mark: |
-| 1.0.x   | :x:                |
+Please report repository-level problems such as:
 
-## Reporting a Vulnerability
+- accidentally committed credentials, tokens, personal data, or private links
+- links that deliver malware or ask users to weaken security controls
+- resources that appear to be unauthorized mirrors or leaked commercial material
+- misleading provenance or licensing claims
 
-Use this section to explain how users can report a vulnerability.
+For non-sensitive problems, open a GitHub issue or pull request. If a report contains a credential, personal data, or other sensitive information, do **not** paste it into a public issue; use GitHub's private security reporting features when available.
 
-To report a vulnerability, please email `belal.alireza@gmail.com`. We promptly review and respond to all reports. Feel free to expect updates on the status of your report whenever needed.
+## Repository rules
 
-## Important Note
+The current branch must not contain real credentials, personal contact data, private cloud-drive links, or mirrored third-party course/book files. Resource listings should point to the creator, publisher, official documentation project, educational platform, or another source with clearly established permission.
 
-Please ensure that any vulnerability or security issue related to the project is reported to the mentioned email address. Avoid disclosing such information in public forums to allow sufficient time for the necessary security actions.
-
-We appreciate your collaboration in improving the security of this project.
+Historical Git commits are not rewritten as part of ordinary content maintenance. If a real credential is ever exposed, rotate or revoke it at the provider in addition to removing it from the current branch.
