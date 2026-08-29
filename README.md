@@ -8,7 +8,7 @@
 
 هدف این پروژه ساده است: اگر دنبال عباراتی مثل **دوره رایگان پایتون فارسی**، **آموزش جاوااسکریپت فارسی**، **کتاب برنامه‌نویسی فارسی**، **آموزش Git و Linux فارسی** یا **منابع هوش مصنوعی فارسی** هستید، بتوانید از یک نقطه‌ی قابل اعتماد شروع کنید و به منبع اصلی برسید.
 
-[![Content Integrity](https://github.com/AlirezaBelal/free-resources/actions/workflows/content-integrity.yml/badge.svg)](https://github.com/AlirezaBelal/free-resources/actions/workflows/content-integrity.yml)
+[![Content Integrity](https://github.com/AlirezaBelal/persian-programming-resources/actions/workflows/content-integrity.yml/badge.svg)](https://github.com/AlirezaBelal/persian-programming-resources/actions/workflows/content-integrity.yml)
 
 > این مخزن فایل کتاب، دوره یا محتوای متعلق به دیگران را میزبانی نمی‌کند. لینک‌ها تا حد امکان به سازنده، ناشر، مستندات رسمی، پلتفرم آموزشی یا منبعی با مجوز روشن برای دسترسی رایگان اشاره می‌کنند.
 
