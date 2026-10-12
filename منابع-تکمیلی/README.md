@@ -50,6 +50,7 @@
 2. [آموزش Docker در راکت](https://roocket.ir/series/learn-docker/) — دوره‌ی فارسی برای Dockerfile، image، container و استقرار.
 3. [آمادگی آزمون LPIC-1](https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D8%A2%D8%B2%D9%85%D9%88%D9%86-lpic1-1555-mk711/) — آموزش فارسی Linux با تمرکز بر سرفصل‌های LPIC-1.
 4. [GitHub Actions برای Build و Publish خودکار ASP.NET Core](https://www.youtube.com/watch?v=o6E26hmyNM4&list=PLN5rV4x2x5XcoAAh0RhmvnNzbr892fr1M) — نمونه‌ی عملی CI/CD با GitHub Actions.
+5. [Docker Cloud Sandboxes چیست؟ جعبه امن ابری برای ایجنت‌های کدنویسی](https://fanavarikade.com/fa/news/docker-cloud-sandboxes-chist) — مقاله‌ی فارسی رایگان برای آشنایی با ایزوله‌سازی microVM، اجرای ایجنت‌هایی مانند Codex و Claude Code، MCP و تفاوت سندباکس‌های محلی و ابری Docker. برای جزئیات فنی و پیش‌نیازهای به‌روز، [مستندات رسمی Docker](https://docs.docker.com/ai/sandboxes/cloud/) را ببینید.
 
 ## SQL و دیتابیس
 
