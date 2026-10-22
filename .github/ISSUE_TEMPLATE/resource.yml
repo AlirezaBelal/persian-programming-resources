@@ -1,6 +1,6 @@
 name: پیشنهاد منبع فارسی
 description: پیشنهاد کتاب، دوره، ویدیو یا کانال آموزشی رایگان برای فارسی‌زبان‌ها
-title: "[Resource]: "
+title: "[منبع]: "
 labels: []
 body:
   - type: markdown
@@ -27,10 +27,17 @@ body:
     validations:
       required: true
   - type: input
+    id: subject
+    attributes:
+      label: موضوع آموزشی
+      placeholder: مثال: Python، توسعه وب یا الگوریتم
+    validations:
+      required: true
+  - type: input
     id: url
     attributes:
       label: لینک اصلی
-      description: Canonical URL یا صفحه رسمی سازنده/ناشر را وارد کنید.
+      description: URL اصلی یا صفحه رسمی سازنده/ناشر را وارد کنید.
       placeholder: https://...
     validations:
       required: true
@@ -45,7 +52,7 @@ body:
     id: free_provenance
     attributes:
       label: چرا دسترسی رایگان و مجاز است؟
-      description: توضیح دهید منبع توسط سازنده، ناشر یا پلتفرم رسمی رایگان ارائه شده است.
+      description: به شاهد رایگان‌بودن کل محتوای اصلی و اجازه انتشار یا ترجمه اشاره کنید. پیش‌نمایش رایگان یا مجوز مخزن به‌تنهایی کافی نیست.
     validations:
       required: true
   - type: checkboxes
