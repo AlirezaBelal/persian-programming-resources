@@ -1,20 +1,21 @@
-# Security and Content Integrity
+<div dir="rtl">
 
-`persian-programming-resources` is a public, Persian-first link directory, not a deployed application or package with versioned security support.
+# امنیت و سلامت محتوا
 
-## Reportable issues
+این مخزن یک فهرست عمومی فارسی است، نه سرویس اجرایی. موارد زیر را گزارش کنید:
 
-Please report repository-level problems such as:
+- اعتبارنامه، اطلاعات خصوصی یا لینک غیرعمومی که اشتباهی ثبت شده است؛
+- مقصد مشکوک به بدافزار یا درخواست غیرفعال‌کردن کنترل امنیتی؛
+- نسخه مشکوک به انتشار بدون مجوز یا ادعای نادرست درباره منشأ اثر.
 
-- accidentally committed credentials, tokens, personal data, or private links
-- links that deliver malware or ask users to weaken security controls
-- resources that appear to be unauthorized mirrors or leaked commercial material
-- misleading provenance or licensing claims
+## گزارش امن
 
-For non-sensitive problems, open a GitHub issue or pull request. If a report contains a credential, personal data, or other sensitive information, do **not** paste it into a public issue; use GitHub's private security reporting features when available.
+مشکلات غیرحساس را در Issue یا PR توضیح دهید. Secret، اطلاعات شخصی یا URL دارای اعتبارنامه را در گزارش عمومی، تصویر یا خروجی CI قرار ندهید. اگر گزینه «Report a vulnerability» در بخش Security مخزن در دسترس است، برای گزارش حساس از آن استفاده کنید؛ در غیر این صورت فقط درخواست یک راه ارتباط خصوصی کنید و جزئیات حساس را عمومی نفرستید.
 
-## Repository rules
+## رسیدگی
 
-The current branch must not contain real credentials, personal contact data, private cloud-drive links, or mirrored third-party course/book files. Resource listings should point to the creator, publisher, official documentation project, educational platform, or another source with clearly established permission.
+فایل کتاب، دوره، فایل اجرایی یا آرشیو شخص ثالث داخل مخزن قرار نمی‌گیرد. لینک‌ها باید به منبع اصلی یا مسیر انتشاری با منشأ قابل توضیح اشاره کنند. تأیید حقوق ترجمه و رایگان‌بودن به بررسی انسانی نیاز دارد؛ CI جای این بررسی را نمی‌گیرد.
 
-Historical Git commits are not rewritten as part of ordinary content maintenance. If a real credential is ever exposed, rotate or revoke it at the provider in addition to removing it from the current branch.
+در صورت افشای اعتبارنامه، حذف از نسخه فعلی کافی نیست: مالک باید آن را نزد ارائه‌دهنده باطل یا تعویض کند. تاریخچه Git در پاک‌سازی عادی بازنویسی نمی‌شود.
+
+</div>

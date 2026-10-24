@@ -1,27 +1,22 @@
-# Community Guidelines
+<div dir="rtl">
 
-This repository welcomes constructive contributions that improve the quality, accuracy, and provenance of Persian-language programming resources.
+# قواعد همکاری
 
-## Expected behavior
+این فهرست با همکاری محترمانه و دقیق جامعه فارسی‌زبان بهتر می‌شود.
 
-Contributors should:
+## رفتار مورد انتظار
 
-- communicate respectfully and focus feedback on the contribution
-- describe sources accurately and avoid promotional or misleading claims
-- respect copyright, licensing, privacy, and platform terms
-- avoid publishing credentials, personal information, or private correspondence
-- accept review feedback when a resource does not meet the curation policy
+- نقد را بر محتوا و پیشنهاد متمرکز کنید، نه شخصیت مشارکت‌کننده.
+- عنوان، موضوع، هزینه و منشأ منبع را صادقانه توضیح دهید.
+- حقوق نشر، حریم خصوصی و شرایط پلتفرم‌ها را رعایت کنید.
+- بازخورد بازبین را بپذیرید؛ هیچ پیشنهاد منبعی خودکار تأیید نمی‌شود.
 
-## Unacceptable behavior
+آزار، تبعیض، اسپم، تبلیغ پنهان، جعل هویت، انتشار اطلاعات خصوصی یا پیشنهاد آگاهانه نسخه بدون مجوز پذیرفته نیست.
 
-Harassment, discriminatory language, spam, undisclosed affiliate promotion, impersonation, credential sharing, doxxing, or knowingly submitting unauthorized copies of paid material are not acceptable.
+## گزارش و رسیدگی
 
-## Reporting
+مشکلات غیرحساس را با حداقل اطلاعات لازم در Issue گزارش کنید. اعتبارنامه، اطلاعات شخصی یا مکاتبه خصوصی را منتشر نکنید؛ برای موارد حساس [راهنمای امنیت](SECURITY.md) را بخوانید.
 
-For non-sensitive moderation concerns, open a GitHub issue with the minimum information needed to explain the problem. Do not publish private information in an issue. If a report contains credentials, personal data, or another security-sensitive detail, use GitHub's private reporting features when available.
+نگهدارنده می‌تواند محتوای ناسازگار با این قواعد یا [راهنمای مشارکت](CONTRIBUTING.md) را اصلاح یا حذف کند. این قواعد کوتاه برای یک فهرست آموزشی عمومی تدوین شده‌اند.
 
-Maintainers may edit or remove contributions that conflict with these guidelines or with [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Attribution
-
-These guidelines are intentionally concise for this repository's content-curation scope and are informed by common open-source community standards, including the Contributor Covenant principles.
+</div>

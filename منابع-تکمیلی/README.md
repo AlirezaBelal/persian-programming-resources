@@ -2,32 +2,33 @@
 
 # منابع تکمیلی برنامه‌نویسی فارسی
 
-این صفحه مجموعه‌ای از **منابع تکمیلی رایگان برای فارسی‌زبان‌ها** است که پس از مقایسه با فهرست اصلی مخزن، از پروژه‌های جامعه و منابع عمومی کشف و به‌صورت مستقل مرور شده‌اند. هدف این صفحه اضافه کردن موارد جدید بدون تکرار فهرست‌های اصلی است.
+این صفحه مجموعه‌ای از **منابع تکمیلی رایگان برای فارسی‌زبان‌ها** است که پس از مقایسه با فهرست اصلی مخزن، از پروژه‌های جامعه و منابع عمومی کشف شده‌اند؛ صحت دسترسی و مجوز همه آن‌ها هنوز به‌صورت مستقل تأیید نشده است. منابع پیش از استفاده باید از نظر پیش‌نیاز، نسخه فناوری و شرایط دسترسی بررسی شوند.
 
 > لینک‌ها به منبع اصلی، پلتفرم آموزشی یا پروژه‌ی عمومی اشاره می‌کنند. این مخزن فایل کتاب یا دوره را mirror نمی‌کند.
 
+> **وضعیت دسترسی:** به‌جز مواردی که صریحاً یادداشت بررسی دارند، رایگان‌بودن کامل دوره‌ها و مجوز بازنشر در این صفحه تأیید نشده است. این برچسب عمومی شامل پلی‌لیست‌ها و کانال‌های انتهای صفحه هم می‌شود.
+
 ## راهنمای سریع
 
-- [Python و تست‌نویسی](#python-و-تستنویسی)
+- [Python و تست‌نویسی](#python-و-تست‌نویسی)
 - [هوش مصنوعی و LLM](#هوش-مصنوعی-و-llm)
-- [مهندسی نرم‌افزار و طراحی](#مهندسی-نرمافزار-و-طراحی)
+- [مهندسی نرم‌افزار و طراحی](#مهندسی-نرم‌افزار-و-طراحی)
 - [C++ و مبانی علوم کامپیوتر](#c-و-مبانی-علوم-کامپیوتر)
 - [Docker، Linux و DevOps](#docker-linux-و-devops)
 - [SQL و دیتابیس](#sql-و-دیتابیس)
 - [JavaScript و Laravel](#javascript-و-laravel)
-- [دوره‌های تکمیلی یوتیوب](#دورههای-تکمیلی-یوتیوب)
-- [کانال‌های فارسی بیشتر](#کانالهای-فارسی-بیشتر)
+- [دوره‌های تکمیلی یوتیوب](#دوره‌های-تکمیلی-یوتیوب)
+- [کانال‌های فارسی بیشتر](#کانال‌های-فارسی-بیشتر)
 
 ## Python و تست‌نویسی
 
 1. [تست‌نویسی با Pytest به زبان فارسی](https://github.com/3lf/pytest-for-humans) — راهنمای فارسی برای یادگیری pytest و ساخت تست‌های Python.
 2. [ساختمان داده در Python](https://github.com/alireza-fa/data-structures-python) — معرفی و پیاده‌سازی ساختمان داده‌ها با Python.
-3. [Python Crash Course در فرادرس](https://faradars.org/courses/crash-course-of-python-fvpht007) — مرور فشرده‌ی مفاهیم اصلی Python در یک منبع رسمی آموزشی.
+3. [Python Crash Course در فرادرس](https://faradars.org/courses/crash-course-of-python-fvpht007) — مرور فشرده‌ی Python در صفحه ناشر؛ رایگان‌بودن کامل نیازمند بررسی.
 
 ## هوش مصنوعی و LLM
 
 1. [LLM برای آدمیزاد](https://github.com/3lf/llm-for-humans) — راهنمای فارسی برای درک بهتر مدل‌های زبانی و استفاده‌ی عملی از آن‌ها.
-2. [آموزش نظریه زبان‌ها و ماشین](https://blog.faradars.org/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-%d8%b1%d8%a7%db%8c%da%af%d8%a7%d9%86-%da%a9%d8%aa%d8%a7%d8%a8-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%86%d8%b8%d8%b1%db%8c%d9%87-%d8%b2%d8%a8%d8%a7%d9%86-%d9%87%d8%a7/) — منبع فارسی درباره‌ی زبان، گرامر و ماشین‌های محاسباتی.
 
 ## مهندسی نرم‌افزار و طراحی
 
@@ -40,23 +41,24 @@
 
 ## C++ و مبانی علوم کامپیوتر
 
-1. [کتاب رایگان آموزش C++ در فرادرس](https://blog.faradars.org/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-%d8%b1%d8%a7%db%8c%da%af%d8%a7%d9%86-%da%a9%d8%aa%d8%a7%d8%a8-%d8%b3%db%8c-%d9%be%d9%84%d8%a7%d8%b3-%d9%be%d9%84%d8%a7%d8%b3/) — منبع فارسی برای ساختمان داده، syntax و مبانی برنامه‌نویسی شیءگرا در C++.
-2. [آموزش زبان C از دکتر علی مس‌فروش](https://www.youtube.com/playlist?list=PLkwcg2bJtvvYuyFQ9h8smvcw3zA91WHzL) — پلی‌لیست آموزشی فارسی زبان C.
-3. [آموزش C++ صفر تا بی‌نهایت](https://www.youtube.com/playlist?list=PLe_DUrcBPdbLA38d-qu8_NgLy4oKdGDUI) — مجموعه‌ی ویدیویی تکمیلی برای C++.
+1. [آموزش نظریه زبان‌ها و ماشین](https://blog.faradars.org/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-%d8%b1%d8%a7%db%8c%da%af%d8%a7%d9%86-%da%a9%d8%aa%d8%a7%d8%a8-%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%86%d8%b8%d8%b1%db%8c%d9%87-%d8%b2%d8%a8%d8%a7%d9%86-%d9%87%d8%a7/) — منبع فارسی درباره‌ی زبان، گرامر و ماشین‌های محاسباتی.
+
+2. [کتاب رایگان آموزش C++ در فرادرس](https://blog.faradars.org/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-%d8%b1%d8%a7%db%8c%da%af%d8%a7%d9%86-%da%a9%d8%aa%d8%a7%d8%a8-%d8%b3%db%8c-%d9%be%d9%84%d8%a7%d8%b3-%d9%be%d9%84%d8%a7%d8%b3/) — منبع فارسی برای ساختمان داده، syntax و مبانی برنامه‌نویسی شیءگرا در C++.
+3. [آموزش زبان C از دکتر علی مس‌فروش](https://www.youtube.com/playlist?list=PLkwcg2bJtvvYuyFQ9h8smvcw3zA91WHzL) — پلی‌لیست آموزشی فارسی زبان C.
+4. [آموزش C++ صفر تا بی‌نهایت](https://www.youtube.com/playlist?list=PLe_DUrcBPdbLA38d-qu8_NgLy4oKdGDUI) — مجموعه‌ی ویدیویی تکمیلی برای C++.
 
 ## Docker، Linux و DevOps
 
 1. [آموزش Docker با جادی در فرادرس](https://faradars.org/courses/docker-concepts-with-jadi-fvprg338/) — دوره‌ی فارسی درباره‌ی مفاهیم Docker و شروع کار با کانتینرها.
-2. [آموزش Docker در راکت](https://roocket.ir/series/learn-docker/) — دوره‌ی فارسی برای Dockerfile، image، container و استقرار.
-3. [آمادگی آزمون LPIC-1](https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D8%A2%D8%B2%D9%85%D9%88%D9%86-lpic1-1555-mk711/) — آموزش فارسی Linux با تمرکز بر سرفصل‌های LPIC-1.
+2. [آموزش Docker در راکت](https://roocket.ir/series/learn-docker/) — دوره‌ی فارسی برای Dockerfile، image، container و استقرار؛ صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
+3. [آمادگی آزمون LPIC-1](https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D8%A2%D8%B2%D9%85%D9%88%D9%86-lpic1-1555-mk711/) — آموزش فارسی Linux با تمرکز بر سرفصل‌های LPIC-1؛ ناشر آموزش را رایگان اعلام می‌کند، هزینه آزمون و گواهی جداست (۲۲ اکتبر ۲۰۲۶).
 4. [GitHub Actions برای Build و Publish خودکار ASP.NET Core](https://www.youtube.com/watch?v=o6E26hmyNM4&list=PLN5rV4x2x5XcoAAh0RhmvnNzbr892fr1M) — نمونه‌ی عملی CI/CD با GitHub Actions.
 5. [Docker Cloud Sandboxes چیست؟ جعبه امن ابری برای ایجنت‌های کدنویسی](https://fanavarikade.com/fa/news/docker-cloud-sandboxes-chist) — مقاله‌ی فارسی رایگان برای آشنایی با ایزوله‌سازی microVM، اجرای ایجنت‌هایی مانند Codex و Claude Code، MCP و تفاوت سندباکس‌های محلی و ابری Docker. برای جزئیات فنی و پیش‌نیازهای به‌روز، [مستندات رسمی Docker](https://docs.docker.com/ai/sandboxes/cloud/) را ببینید.
 
 ## SQL و دیتابیس
 
-1. [دوره جامع SQL در دانشجویار](https://www.daneshjooyar.com/sql-training/) — آموزش فارسی مفاهیم دیتابیس رابطه‌ای، CRUD و SQL.
-2. [آموزش SQL Server 2016](https://codeyad.com/course/learn-sql-server-2016) — دوره‌ی فارسی SQL Server از مبانی تا مدیریت داده.
-3. [Entity Framework Core](https://www.youtube.com/watch?v=XQgbRTvHqEg&list=PLN5rV4x2x5Xfob-AfkhkixASFveutHuWm) — آموزش ویدیویی فارسی EF Core برای اکوسیستم .NET.
+1. [دوره جامع SQL در دانشجویار](https://www.daneshjooyar.com/sql-training/) — آموزش فارسی مفاهیم دیتابیس رابطه‌ای، CRUD و SQL؛ صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
+2. [Entity Framework Core](https://www.youtube.com/watch?v=XQgbRTvHqEg&list=PLN5rV4x2x5Xfob-AfkhkixASFveutHuWm) — آموزش ویدیویی فارسی EF Core برای اکوسیستم .NET.
 
 ## JavaScript و Laravel
 
@@ -88,7 +90,7 @@
 
 بخشی از این لینک‌ها هنگام مقایسه با پروژه‌ی عمومی [`barnamenevisi/free-resources`](https://github.com/barnamenevisi/free-resources) کشف شدند. snapshot بررسی‌شده commit `4c0dbd2b45461f5ecfce4c2eef58423ac0a12eaa` است و repository منبع تحت MIT منتشر شده است.
 
-توضیحات بالا برای این مخزن بازنویسی شده‌اند و متن README منبع کپی نشده است. لینک‌های Telegram، file-hosting mirror و مواردی که رایگان یا مجاز بودن آن‌ها به‌اندازه‌ی کافی روشن نبود، عمداً وارد نشده‌اند.
+توضیحات بالا برای این مخزن بازنویسی شده‌اند و متن README منبع کپی نشده است. این منشأ فقط روش کشف لینک‌ها را توضیح می‌دهد و تأیید رایگان‌بودن یا مجوز آثار لینک‌شده نیست.
 
 ## پیشنهاد منبع جدید
 

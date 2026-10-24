@@ -6,6 +6,8 @@
 
 > برای دوره‌های ویدیویی و کلاس‌های رایگان، بخش [دوره‌های برنامه‌نویسی فارسی](../دوره‌ها/README.md) و [آموزش‌های یوتیوب](../دوره‌های%20آموزشی%20در%20یوتیوب/README.md) را ببینید.
 
+> **وضعیت دسترسی:** بازبودن صفحه، تأیید مجوز ترجمه نیست. برچسب «مجوز ترجمه نیازمند بررسی» یعنی اجازه صاحب اثر اصلی در این ممیزی تأیید نشده؛ نه اینکه نقض حق نشر اثبات شده باشد. منابع با خطای موقت حذف نشده‌اند.
+
 ## فهرست مطالب
 
 - [گیت (Git)](#گیت)
@@ -14,16 +16,15 @@
 - [پایتون (Python)](#پایتون)
 - [جنگو (Django)](#جنگو)
 - [جاوااسکریپت (JavaScript)](#جاوااسکریپت)
-- [ری‌اکت (React)](#ریاکت)
+- [ری‌اکت (React)](#ری‌اکت)
 - [ویو (Vue)](#ویو)
 - [گو (Go)](#گو)
 - [الگوهای طراحی (Design Patterns)](#الگوهای-طراحی)
 - [لینوکس (Linux)](#لینوکس)
 - [شبکه (Network)](#شبکه)
-- [سی‌اس‌اس (CSS)](#سیاساس)
+- [سی‌اس‌اس (CSS)](#سی‌اس‌اس)
 - [اسپرینگ (Spring)](#اسپرینگ)
 - [آر (R)](#آر)
-- [موضوعات متفرقه](#متفرقه)
 
 ---
 
@@ -37,22 +38,21 @@
 
 ### کدنویسی تمیز
 
-1. [ترجمه کتاب «هنر کدنویسی خوانا»](https://github.com/Hossein52Hz/The-Art-Of-Readable-Code-Persian): ترجمه‌ای فارسی درباره‌ی خوانایی، سادگی و نگه‌داری بهتر کد.
-2. [ترجمه آزاد کتاب «کد تمیز»](https://codetamiz.vercel.app): مروری فارسی بر اصول کدنویسی تمیز و نوشتن کد قابل نگه‌داری.
+1. [ترجمه کتاب «هنر کدنویسی خوانا»](https://github.com/Hossein52Hz/The-Art-Of-Readable-Code-Persian): ترجمه‌ای فارسی درباره‌ی خوانایی، سادگی و نگه‌داری بهتر کد. **[مجوز ترجمه نیازمند بررسی]**
+2. [ترجمه فارسی کتاب «کد تمیز»](https://codetamiz.vercel.app): مروری فارسی بر اصول کدنویسی تمیز و نوشتن کد قابل نگه‌داری. **[مجوز ترجمه نیازمند بررسی]**
 
 ### پایتون
 
 1. [کد تمیز در پایتون](https://github.com/SepehrRasouli/clean-code-python): راهنمای فارسی برای نوشتن کد تمیز در Python.
-2. [کد تمیز در پایتون](https://github.com/ftg-iran/clean-code-python): ترجمه و مثال‌هایی برای اصول Clean Code در Python.
-3. [استفاده از Asyncio در پایتون](https://github.com/ftg-iran/aip-persian): معرفی Asyncio و مفاهیم برنامه‌نویسی همزمان در Python.
-4. [کتاب آموزش آزاد پایتون](https://python.coderz.ir/index.html): آموزش زبان Python با رویکردی مناسب برای شروع یادگیری برنامه‌نویسی.
-5. [یک بایت از پایتون](https://github.com/elias8702/Byte-Of-Python-Persian): نسخه‌ی فارسی یک راهنمای مقدماتی و شناخته‌شده برای Python.
+2. [استفاده از Asyncio در پایتون](https://github.com/ftg-iran/aip-persian): معرفی Asyncio و مفاهیم برنامه‌نویسی همزمان در Python. **[مجوز ترجمه نیازمند بررسی]**
+3. [کتاب آموزش آزاد پایتون](https://python.coderz.ir/index.html): آموزش زبان Python با رویکردی مناسب برای شروع یادگیری برنامه‌نویسی.
+4. [یک بایت از پایتون](https://github.com/elias8702/Byte-Of-Python-Persian): نسخه‌ی فارسی یک راهنمای مقدماتی و شناخته‌شده برای Python.
 
 ### جنگو
 
-1. [الگوهای طراحی جنگو و رویه‌های برتر](https://github.com/ftg-iran/ddpabp-persian): الگوها و روش‌های متداول توسعه‌ی وب با Django و Python.
-2. [جنگو برای APIها](https://github.com/ftg-iran/dfa-persian): راهنمای ساخت Web API با Django.
-3. [جنگو برای حرفه‌ای‌ها](https://github.com/ftg-iran/dfp-persian): منبعی برای توسعه‌ی پروژه‌های پیشرفته‌تر Django.
+1. [الگوهای طراحی جنگو و رویه‌های برتر](https://github.com/ftg-iran/ddpabp-persian): الگوها و روش‌های متداول توسعه‌ی وب با Django و Python. **[مجوز ترجمه نیازمند بررسی]**
+2. [جنگو برای APIها](https://github.com/ftg-iran/dfa-persian): راهنمای ساخت Web API با Django. **[مجوز ترجمه نیازمند بررسی]**
+3. [جنگو برای حرفه‌ای‌ها](https://github.com/ftg-iran/dfp-persian): منبعی برای توسعه‌ی پروژه‌های پیشرفته‌تر Django. **[مجوز ترجمه نیازمند بررسی]**
 
 ### جاوااسکریپت
 
@@ -76,8 +76,7 @@
 
 ### الگوهای طراحی
 
-1. [عمیق شدن در الگوهای طراحی](https://github.com/ftg-iran/didp-persian): راهنمای فارسی انواع Design Pattern و کاربرد آن‌ها.
-2. [الگوهای طراحی در برنامه‌نویسی شی‌گرا](https://github.com/khajavi/Practical-Design-Patterns): مجموعه‌ای از الگوهای طراحی همراه با مثال‌های عملی.
+1. [الگوهای طراحی در برنامه‌نویسی شی‌گرا](https://github.com/khajavi/Practical-Design-Patterns): مجموعه‌ای از الگوهای طراحی همراه با مثال‌های عملی.
 
 ### لینوکس
 
@@ -87,11 +86,11 @@
 
 ### شبکه
 
-1. [Network Science](http://networksciencebook.com): کتاب آزاد علم شبکه؛ منبع اصلی انگلیسی برای مباحث Network Science.
+1. [Network Science](https://networksciencebook.com/): کتاب آزاد علم شبکه؛ منبع اصلی انگلیسی برای مباحث Network Science.
 
 ### سی‌اس‌اس
 
-1. [یادگیری Layout با CSS](http://fa.learnlayout.com): آموزش فارسی مفاهیم پایه‌ی CSS Layout.
+1. [یادگیری Layout با CSS](https://fa.learnlayout.com/): آموزش فارسی مفاهیم پایه‌ی CSS Layout.
 
 ### اسپرینگ
 
@@ -99,12 +98,9 @@
 
 ### آر
 
-1. [راهنمای زبان R](http://cran.r-project.org/doc/contrib/Mousavi-R-lang_in_Farsi.pdf): راهنمای فارسی زبان R در وب‌سایت CRAN.
-2. [موضوعات ویژه در R](http://cran.r-project.org/doc/contrib/Mousavi-R_topics_in_Farsi.pdf): منبع فارسی برای موضوعات تکمیلی زبان R.
+1. [راهنمای زبان R](https://cran.r-project.org/doc/contrib/Mousavi-R-lang_in_Farsi.pdf): راهنمای فارسی زبان R در CRAN؛ سند قدیمی منتشرشده در ۲۰۱۲، مناسب مرور مبانی.
+2. [موضوعات ویژه در R](https://cran.r-project.org/doc/contrib/Mousavi-R_topics_in_Farsi.pdf): منبع فارسی تکمیلی R در CRAN؛ سند قدیمی منتشرشده در ۲۰۱۲.
 
-### متفرقه
-
-1. [اطلاعات مربوط به تسهیلات نظام وظیفه](https://github.com/m-yosefpor/nezam-vazifeh): مجموعه‌ای عمومی از اطلاعات و تجربه‌ها درباره‌ی امریه و پروژه‌های جایگزین خدمت؛ این مورد منبع برنامه‌نویسی نیست اما برای بخشی از جامعه‌ی فنی فارسی‌زبان کاربرد دارد.
 
 ## پیشنهاد منبع جدید
 

@@ -6,6 +6,8 @@
 
 > برای کتاب و منابع متنی به [کتاب‌های رایگان برنامه‌نویسی فارسی](../کتاب‌ها/README.md) و برای آموزش‌های ویدیویی مستقل به [دوره‌های فارسی یوتیوب](../دوره‌های%20آموزشی%20در%20یوتیوب/README.md) مراجعه کنید.
 
+> **وضعیت دسترسی:** رایگان‌بودن کامل دوره‌های این صفحه در ممیزی ۲۲ اکتبر ۲۰۲۶، به‌جز موارد دارای یادداشت صریح، تأیید نشده و نیازمند بررسی دستی است. عنوان قدیمی «رایگان»، پیش‌نمایش یا بازشدن صفحه برای تأیید کافی نیست. ثبت‌نام یا گواهی پایان دوره ممکن است شرایط جداگانه داشته باشد.
+
 ## فهرست مطالب
 
 - [اچ‌تی‌ام‌ال و سی‌اس‌اس (HTML | CSS)](#html-و-css)
@@ -35,7 +37,7 @@
 
 ### HTML و CSS
 
-- [آموزش رایگان HTML و CSS از مقدماتی تا پیشرفته](https://codeyad.com/course/learn-html-css)
+- [آموزش رایگان HTML و CSS از مقدماتی تا پیشرفته](https://codeyad.com/course/learn-html-css-free) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [آموزش جامع و رایگان CSS Grid](https://codeyad.com/course/learn-css-grid)
 - [آموزش رایگان FlexBox - صفر تا 100 فلکس باکس](https://codeyad.com/course/learn-flexbox)
 - [آموزش رایگان HTML در مکتب‌خونه](https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-html-mk1263/)
@@ -43,7 +45,7 @@
 
 ### جاوا
 
-- [جاواکاپ: آموزش رایگان جاوا](https://javacup.ir/javacup-training-videos/)
+- [جاواکاپ: آموزش رایگان جاوا](https://javacup.ir/javacup-training-videos/) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)
 - [سریع آسان: آموزش جاوا](https://sariasan.com/java/arrays/java-free-full-lessons/)
 - [کدیاد: آموزش جاوا](https://codeyad.com/course/2023/آموزش-رایگان-جاوا-به-زبان-ساده-java)
@@ -57,7 +59,6 @@
 ### جاوااسکریپت
 
 - [ریکت اپ: آموزش جاوا اسکریپت پیشرفته](https://reactapp.ir/courses/دوره-های-آموزشی/آموزش-پیشرفته-جاوا-اسکریپت-javascript/)
-- [کدیاد: آموزش رایگان و جامع جاوا اسکریپت](https://codeyad.com/course/learn-javascript)
 
 ### ریکت
 
@@ -76,7 +77,7 @@
 - [تاپ لرن: آموزش رایگان پایتون](https://toplearn.com/courses/تحت-ویندوز/آموزش-رایگان-پایتون-(-Python-))
 - [کدیاد: آموزش مقدماتی تا پیشرفته پایتون](https://codeyad.com/Course/2003/آموزش-رایگان-مقدماتی-تا-پیشرفته-پایتون-(python))
 - [سبزلرن: دوره رایگان پایتون](https://sabzlearn.ir/product/python/)
-- [راکت: آموزش پایتون](https://roocket.ir/series/learn-python)
+- [راکت: آموزش پایتون](https://roocket.ir/series/learn-python) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [گوتوکلاس: دوره پایتون جادی میرمیرانی](https://gotoclass.ir/courses/آموزش-پایتون/)
 - [سریع آسان: آموزش پایتون](https://sariasan.com/python/essentials/all-pyth-lessons/)
 - [دانشجویار: آموزش پایتون مقدماتی](https://www.daneshjooyar.com/آموزش-پایتون-python-مقدماتی/)
@@ -93,7 +94,7 @@
 
 - [تاپ لرن: دوره آموزش سی شارپ از مقدماتی تا پیشرفته](https://toplearn.com/courses/تحت-ویندوز/دوره-آموزش-سی-شارپ-از-مقدماتی-تا-پیشرفته)
 - [کدیاد: دوره رایگان سی شارپ #C](https://codeyad.com/course/2008/دوره-رایگان-سی-شارپ-c)
-- [روکسو: آموزش سی شارپ](https://www.roxo.ir/series/csharp-tutorials)
+- [روکسو: آموزش سی شارپ](https://www.roxo.ir/series/csharp-tutorials) — ناشر مطالب متنی دوره را رایگان اعلام می‌کند (۲۲ اکتبر ۲۰۲۶).
 - [فرانش: آموزش برنامه‌نویسی سی شارپ](https://faranesh.com/blog/c-sharp-tutorial)
 
 ### سی پلاس پلاس
@@ -107,7 +108,7 @@
 
 ### پی اچ پی
 
-- [راکت: آموزش PHP](https://roocket.ir/series/learning-php)
+- [راکت: آموزش PHP](https://roocket.ir/series/learning-php) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [مکتب‌خونه: آموزش رایگان PHP و MySQL](https://maktabkhooneh.org/course/آموزش-رایگان-php-و-mysql-پروژه-محور-mk1074/)
 - [کدپز: آموزش PHP](https://codepaz.com/آموزش-php/)
 - [کدیاد: آموزش مقدماتی تا پیشرفته PHP](https://codeyad.com/course/2006/آموزش-مقدماتی-تا-پیشرفته-php-پروژه-محور)
@@ -123,14 +124,13 @@
 - [فرادرس: آموزش گیت و گیت‌هاب](https://faradars.org/courses/fvgit9609-git-github-gitlab)
 - [وب پروگ: آموزش گیت و گیت هاب](https://webprog.io/course/آموزش-رایگان-گیت-و-گیت-هاب-git-github)
 - [ری‌اکت اپ: آموزش Git و Github](https://reactapp.ir/courses/دوره-های-آموزشی/آموزش-git-و-github/)
-- [کدیاد: آموزش رایگان Git و Github](https://codeyad.com/course/learn-git-and-github)
+- [کدیاد: آموزش رایگان Git و Github](https://codeyad.com/course/learn-git-and-github) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [مونگارد: دوره آموزش گیت](https://www.mongard.ir/courses/gitcourse/)
 
 ### الگوریتم
 
 - [مکتب‌خونه: آموزش کامل طراحی الگوریتم‌ها](https://maktabkhooneh.org/course/189-طراحی-الگوریتم-mk189/)
-- [کدیاد: آموزش رایگان الگوریتم و فلوچارت](https://codeyad.com/course/learn-algorithm-flowchart)
-- [مونگارد: دوره آموزش الگوریتم‌نویسی در پایتون](https://www.mongard.ir/courses/algorithms/)
+- [کدیاد: آموزش رایگان الگوریتم و فلوچارت](https://codeyad.com/course/learn-algorithm-flowchart) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 
 ### ساختمان داده
 
@@ -147,11 +147,11 @@
 
 ### دارت
 
-- [کدیاد: آموزش رایگان مقدماتی تا پیشرفته زبان دارت (Dart)](https://codeyad.com/course/learn-dart-language)
+- [کدیاد: آموزش رایگان مقدماتی تا پیشرفته زبان دارت (Dart)](https://codeyad.com/course/learn-dart-language) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 
 ### اس کیو ال سرور
 
-- [کدیاد: آموزش رایگان SQL Server 2016](https://codeyad.com/course/learn-sql-server-2016)
+- [کدیاد: آموزش رایگان SQL Server 2016](https://codeyad.com/course/learn-sql-server-2016) — مربوط به نسخه قدیمی؛ برای مفاهیم جدید مستندات نسخه فعلی را هم ببینید.
 
 ### لینوکس
 
