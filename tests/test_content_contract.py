@@ -24,7 +24,7 @@ class ContentContractTests(unittest.TestCase):
 
     def test_ordinary_edits_encoded_paths_and_duplicate_anchors_are_valid(self):
         self.write_readme('[متن](کتاب‌ها/README.md#عنوان-دلخواه-فارسی)\n'
-                          '## تست‌نویسی\n## تست‌نویسی\n[بخش دوم](#تستنویسی-1)\n'
+                          '## تست‌نویسی\n## تست‌نویسی\n[بخش دوم](#تست‌نویسی-1)\n'
                           '[دوره](https://example.org/course/(python))\n'
                           'تغییر عبارت‌ها و توضیح سیاست درباره t.me/ مجاز است.  \n')
         self.assertEqual(check(self.root), [])
@@ -39,7 +39,7 @@ class ContentContractTests(unittest.TestCase):
         self.assertTrue(any('SECURITY.md: cannot read valid UTF-8' in e for e in errors))
 
     def test_missing_target_anchor_and_outside_path_are_rejected(self):
-        for destination in ('missing.md', 'کتاب‌ها/README.md#ناموجود', '../outside.md'):
+        for destination in ('missing.md', 'کتاب‌ها/README.md#ناموجود', '#تستنویسی-1', '../outside.md'):
             with self.subTest(destination=destination):
                 self.write_readme(f'[متن]({destination})')
                 self.assertTrue(any('README.md:' in error for error in check(self.root)))

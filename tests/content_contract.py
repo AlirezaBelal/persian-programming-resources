@@ -28,7 +28,7 @@ def anchors(text):
     used = set()
     for heading in re.findall(r"^#{1,6}\s+(.+?)\s*#*\s*$", text, re.MULTILINE):
         heading = re.sub(r"<[^>]+>", "", heading).lower()
-        base = "".join(c for c in heading if c.isalnum() or c in " _-").replace(" ", "-")
+        base = "".join(c for c in heading if c.isalnum() or c in " _-\u200c").replace(" ", "-")
         slug, number = base, 0
         while slug in used:
             number += 1
