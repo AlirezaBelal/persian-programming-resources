@@ -3,7 +3,7 @@
 from pathlib import Path
 import re
 import sys
-from urllib.parse import unquote, urlsplit
+from urllib.parse import parse_qsl, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = (
@@ -17,10 +17,18 @@ LINK = re.compile(r"\[[^\]\n]+\]\(((?:[^()\s]|\([^()\n]*\))+)\)")
 SECRETS = (
     re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     re.compile(r"\bgh[pousr]_[A-Za-z0-9]{20,}\b"),
+    re.compile(r"\bgithub_pat_[A-Za-z0-9_]{20,}\b"),
+    re.compile(r"\bglpat-[A-Za-z0-9_-]{20,}\b"),
     re.compile(r"\bAIza[0-9A-Za-z_-]{30,}\b"),
     re.compile(r"\b\d{8,12}:[A-Za-z0-9_-]{30,}\b"),
 )
 BLOCKED_HOSTS = {"t.me", "telegram.me", "mega.nz", "mediafire.com"}
+# Do not allow an alternate HTML link syntax to bypass Markdown link review.
+HTML_TAG = re.compile(r"</?[A-Za-z][A-Za-z0-9]*\b[^>]*>")
+SENSITIVE_QUERY_KEYS = {
+    "api_key", "apikey", "access_token", "token", "auth", "authorization",
+    "password", "secret", "client_secret", "signature",
+}
 
 
 def anchors(text):
@@ -45,7 +53,12 @@ def check(root):
             errors.append(f"{required}: required file missing")
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root)
-        if any(part in {".git", ".idea", "__pycache__"} for part in rel.parts) or not path.is_file():
+        if any(part in {".git", ".idea", "__pycache__"} for part in rel.parts):
+            continue
+        if path.is_symlink():
+            errors.append(f"{rel}: symbolic links are not permitted in this catalogue")
+            continue
+        if not path.is_file():
             continue
         allowed = (path.suffix == ".md" or str(rel) in {"LICENSE", ".gitignore"}
                    or (rel.parts[0] == "tests" and path.suffix == ".py")
@@ -65,6 +78,9 @@ def check(root):
         if path.suffix != ".md":
             continue
         for number, line in enumerate(text.splitlines(), 1):
+            for tag in HTML_TAG.finditer(line):
+                if tag.group(0) not in {'<div dir="rtl">', '</div>'}:
+                    errors.append(f"{rel}:{number}: HTML tags other than the RTL wrapper are not permitted")
             if line.rstrip() != line and not (line.endswith("  ") and not line.endswith("   ")):
                 errors.append(f"{rel}:{number}: unintended trailing whitespace")
             remainder = LINK.sub("", line)
@@ -82,6 +98,11 @@ def check(root):
                 if url.scheme in {"http", "https"}:
                     if not host or url.username is not None or url.password is not None:
                         errors.append(f"{rel}:{number}: invalid or credential-bearing external URL")
+                    if any(
+                        key.lower() in SENSITIVE_QUERY_KEYS
+                        for key, _value in parse_qsl(url.query, keep_blank_values=True)
+                    ):
+                        errors.append(f"{rel}:{number}: credential-like URL query parameter")
                     continue
                 if url.scheme or url.netloc:
                     errors.append(f"{rel}:{number}: unsupported link scheme")
