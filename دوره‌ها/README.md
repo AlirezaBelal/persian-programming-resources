@@ -114,7 +114,7 @@
 - [کدیاد: آموزش مقدماتی تا پیشرفته PHP](https://codeyad.com/course/2006/آموزش-مقدماتی-تا-پیشرفته-php-پروژه-محور)
 - [روکسو: آموزش زبان PHP](https://www.roxo.ir/series/php-tutorials-for-beginners)
 - [تاپدمی: آموزش رایگان PHP](https://topdemy.ir/courses/learning-php-for-beginners)
-- [آی لایک پی اچ پی: آموزش PHP](http://ilikephp.ir/tutorial/id/13/آموزش-PHP)
+- [آی لایک پی اچ پی: آموزش PHP](http://ilikephp.ir/tutorial/id/13/آموزش-PHP) — **لینک قدیمی HTTP (بدون رمزنگاری)**؛ مقصد HTTPS هم‌ارز و وضعیت دسترسی فعلی این منبع مستقلاً تأیید نشده است. پیش از استفاده، آدرس و منشأ انتشار را بررسی کنید.
 - [سریع آسان: آموزش PHP](https://sariasan.com/php/others4/all-lessons-5/)
 - [سکان آکادمی: آموزش PHP](https://sokanacademy.com/academy/courses/آموزش-php)
 - [کدیاد: آموزش جامع طراحی سایت با PHP](https://codeyad.com/course/learn-web-design-with-php)

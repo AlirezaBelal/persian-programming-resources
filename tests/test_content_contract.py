@@ -57,6 +57,45 @@ class ContentContractTests(unittest.TestCase):
         self.assertTrue(any('credential' in e for e in check(self.root)))
         self.assertNotIn(synthetic, '\n'.join(check(self.root)))
 
+    def test_html_link_or_active_markup_cannot_bypass_review(self):
+        for html in (
+            '<a href="https://example.org/resource">alternate link</a>',
+            '<script src="https://example.org/code.js"></script>',
+            '<iframe src="https://example.org/embed"></iframe>',
+            '<div dir="rtl" onclick="alert(1)">',
+        ):
+            with self.subTest(html=html):
+                self.write_readme(html)
+                errors = check(self.root)
+                self.assertTrue(any("HTML tags" in e for e in errors))
+                self.assertNotIn("example.org", "\\n".join(errors))
+
+    def test_sensitive_query_parameters_are_rejected_without_echoing_values(self):
+        for name in ("api_key", "access_token", "token", "password", "client_secret"):
+            synthetic = f"https://example.org/course?{name}=synthetic-confidential-value"
+            with self.subTest(parameter=name):
+                self.write_readme(f"[دوره]({synthetic})")
+                errors = check(self.root)
+                self.assertTrue(any("credential-like URL query parameter" in e for e in errors))
+                self.assertNotIn(synthetic, "\\n".join(errors))
+
+    def test_token_patterns_cover_current_github_and_gitlab_prefixes(self):
+        for synthetic in ("github_pat_" + "x" * 40, "glpat-" + "x" * 30):
+            with self.subTest(prefix=synthetic[:6]):
+                self.write_readme(synthetic)
+                errors = check(self.root)
+                self.assertTrue(any("credential/private-key pattern" in e for e in errors))
+                self.assertNotIn(synthetic, "\\n".join(errors))
+
+    def test_symbolic_links_are_rejected(self):
+        outside = self.root.parent / "synthetic-outside-resource.txt"
+        file_path = self.root / "linked.md"
+        try:
+            file_path.symlink_to(outside)
+        except (OSError, NotImplementedError):
+            self.skipTest("Symbolic links not available on this platform")
+        self.assertTrue(any("symbolic links are not permitted" in e for e in check(self.root)))
+
     def test_unexpected_download_and_malformed_link_are_rejected(self):
         (self.root / 'book.pdf').write_bytes(b'synthetic fixture')
         self.write_readme('[متن](https://example.org/unfinished')
