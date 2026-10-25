@@ -64,7 +64,7 @@
 
 1. [JavaScript از صفر تا Hero در سبزلرن](https://sabzlearn.ir/course/java-script-zero-to-hero/) — دوره‌ی فارسی JavaScript همراه با تمرین و پروژه.
 2. [JavaScript سریع و آسان در فرادرس](https://faradars.org/courses/javascript-crash-course-fvjs010) — مرور فشرده‌ی JavaScript برای شروع یا جمع‌بندی.
-3. [توابع Collection در Laravel](https://sabzlearn.ir/course/laravel-collection-mastery/) — آموزش کاربردی Laravel Collection با مثال‌های عملی.
+3. [توابع Collection در Laravel](https://sabzlearn.ir/course/laravel-collection-mastery/) — آموزش کاربردی Laravel Collection با مثال‌های عملی. **[نشانی نیازمند بررسی: HEAD در ۲۶ اکتبر ۲۰۲۶ پاسخ ۴۰۴ داد؛ درخواست GET به پایان مهلت رسید و مقصد جایگزین رسمی تأیید نشد.]**
 4. [React Query از مبتدی تا پیشرفته](https://www.youtube.com/playlist?list=PLJ9zDGwhhsBzELHNdflPj4XgS2hAXBILz) — پلی‌لیست فارسی برای مدیریت داده‌ی سمت client در React.
 
 ## دوره‌های تکمیلی یوتیوب
@@ -79,7 +79,7 @@
 1. [Neon Learn](https://www.youtube.com/@neonlearn) — Java، React و TypeScript.
 2. [OpenCode](https://www.youtube.com/@OpenCode) — C، C++، React و موضوعات برنامه‌نویسی.
 3. [Voorivex](https://www.youtube.com/@Voorivex) — امنیت و موضوعات فنی مرتبط.
-4. [Sarvin Style](https://www.youtube.com/@sarvinStyle) — React، Node.js، Git و توسعه وب.
+4. [Sarvin Style Coding](https://www.youtube.com/sarvinstyle) — Python، Linux، Docker و DevOps.
 5. [Masood Sadri](https://www.youtube.com/@MasoodSadri) — JavaScript و React.
 6. [Saeed Shahrivari](https://www.youtube.com/@saeedshahrivari1586) — مباحث دانشگاهی و مهندسی کامپیوتر.
 7. [Reza Shokrzad](https://youtube.com/@RezaShokrzad) — علم داده، یادگیری ماشین، یادگیری عمیق و مصورسازی داده.

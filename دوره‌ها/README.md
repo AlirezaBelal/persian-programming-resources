@@ -46,7 +46,7 @@
 ### جاوا
 
 - [جاواکاپ: آموزش رایگان جاوا](https://javacup.ir/javacup-training-videos/) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
-- [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-آموزش-رایگان-صفر-تا-پیشرفته-جاوا)
+- [جاواپرو: آموزش رایگان جاوا](https://javapro.ir/بی-نظیرترین-اموزش-رایگان-صفر-تا-پیشرفته-جاوا)
 - [سریع آسان: آموزش جاوا](https://sariasan.com/java/arrays/java-free-full-lessons/)
 - [کدیاد: آموزش جاوا](https://codeyad.com/course/2023/آموزش-رایگان-جاوا-به-زبان-ساده-java)
 - [روکسو: آموزش جاوا](https://www.roxo.ir/introduction-and-history-of-java)
@@ -76,7 +76,6 @@
 
 - [تاپ لرن: آموزش رایگان پایتون](https://toplearn.com/courses/تحت-ویندوز/آموزش-رایگان-پایتون-(-Python-))
 - [کدیاد: آموزش مقدماتی تا پیشرفته پایتون](https://codeyad.com/Course/2003/آموزش-رایگان-مقدماتی-تا-پیشرفته-پایتون-(python))
-- [سبزلرن: دوره رایگان پایتون](https://sabzlearn.ir/product/python/)
 - [راکت: آموزش پایتون](https://roocket.ir/series/learn-python) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [گوتوکلاس: دوره پایتون جادی میرمیرانی](https://gotoclass.ir/courses/آموزش-پایتون/)
 - [سریع آسان: آموزش پایتون](https://sariasan.com/python/essentials/all-pyth-lessons/)
@@ -88,7 +87,7 @@
 - [خوش آموز: آموزش زبان برنامه‌نویسی C](https://khoshamoz.ir/index.php/post1386)
 - [سریع آسان: آموزش برنامه‌نویسی سی](https://sariasan.com/c-2/c-programming-free-full-lessons/)
 - [تاپ لرن: آموزش رایگان زبان C](https://toplearn.com/courses/windows/آموزش-رایگان-زبان-c)
-- [مکتب‌خونه: اصول برنامه‌نویسی C و C++](https://maktabkhooneh.org/course/اصول-برنامه‌نویسی-c-و-c-mk68/)
+- [مکتب‌خونه: اصول برنامه‌نویسی C و C++](https://maktabkhooneh.org/course/اصول-برنامه-نویسی-c-و-c-mk68/)
 
 ### سی شارپ
 
@@ -102,22 +101,20 @@
 - [وب سایت شخصی مهندس مهدی زعفری: آموزش C++](https://mzsoftware.ir/category/cplusplus-programming/)
 - [کدیاد: آموزش رایگان زبان برنامه‌نویسی C++](https://codeyad.com/course/2021/آموزش-رایگان-زبان-برنامه‌نویسی-c-از-مقدماتی-تا-پیشرفته)
 - [فرادرس: دوره آموزشی C++](https://faradars.org/courses/c-plus-plus-programming-crash-course-fvcp006)
-- [تاپ لرن: آموزش جامع C++](https://toplearn.com/courses/تحت-ویندوز/آموزش-رایگان-و-جامع-cplusplusC-تا-سطح-کاملا-پیشرفته)
-- [مکتب‌خونه: اصول برنامه نویسی C و C++](https://maktabkhooneh.org/course/اصول-برنامه‌نویسی-c-و-c-mk68/)
-- [مکتب‌خونه: برنامه‌نویسی پیشرفته به زبان C++](https://maktabkhooneh.org/course/برنامه‌نویسی-پیشرفته-mk187/)
+- [تاپ لرن: آموزش جامع C++](https://toplearn.com/c/v24X)
+- [مکتب‌خونه: اصول برنامه نویسی C و C++](https://maktabkhooneh.org/course/اصول-برنامه-نویسی-c-و-c-mk68/)
+- [مکتب‌خونه: برنامه‌نویسی پیشرفته به زبان C++](https://maktabkhooneh.org/course/برنامه-نویسی-پیشرفته-mk187/)
 
 ### پی اچ پی
 
 - [راکت: آموزش PHP](https://roocket.ir/series/learning-php) — صفحه ناشر در ۲۲ اکتبر ۲۰۲۶ دوره را رایگان اعلام می‌کند.
 - [مکتب‌خونه: آموزش رایگان PHP و MySQL](https://maktabkhooneh.org/course/آموزش-رایگان-php-و-mysql-پروژه-محور-mk1074/)
 - [کدپز: آموزش PHP](https://codepaz.com/آموزش-php/)
-- [کدیاد: آموزش مقدماتی تا پیشرفته PHP](https://codeyad.com/course/2006/آموزش-مقدماتی-تا-پیشرفته-php-پروژه-محور)
+- [کدیاد: آموزش PHP به زبان ساده](https://codeyad.com/course/teach-php-very-simple) — صفحه ناشر در ۲۶ اکتبر ۲۰۲۶ آموزش را رایگان اعلام می‌کند؛ مبانی PHP، شیءگرایی و پروژه وبلاگ.
 - [روکسو: آموزش زبان PHP](https://www.roxo.ir/series/php-tutorials-for-beginners)
 - [تاپدمی: آموزش رایگان PHP](https://topdemy.ir/courses/learning-php-for-beginners)
-- [آی لایک پی اچ پی: آموزش PHP](http://ilikephp.ir/tutorial/id/13/آموزش-PHP) — **لینک قدیمی HTTP (بدون رمزنگاری)**؛ مقصد HTTPS هم‌ارز و وضعیت دسترسی فعلی این منبع مستقلاً تأیید نشده است. پیش از استفاده، آدرس و منشأ انتشار را بررسی کنید.
 - [سریع آسان: آموزش PHP](https://sariasan.com/php/others4/all-lessons-5/)
 - [سکان آکادمی: آموزش PHP](https://sokanacademy.com/academy/courses/آموزش-php)
-- [کدیاد: آموزش جامع طراحی سایت با PHP](https://codeyad.com/course/learn-web-design-with-php)
 
 ### گیت
 
