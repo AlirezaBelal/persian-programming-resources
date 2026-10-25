@@ -21,15 +21,14 @@
 9. **پای کلاس** — آموزش Python. [مشاهده کانال](https://www.youtube.com/@pyclass_net)
 10. **محمد بابازاده** — Django، مهندسی نرم‌افزار، Clean Code، Docker و DevOps. [مشاهده کانال](https://www.youtube.com/@BobyCloud)
 11. **بهنام رضایی** — آموزش ساخت بازی. [مشاهده کانال](https://www.youtube.com/@BehnamRezaei_Learncg)
-12. **قدیر یلمه** — هک و امنیت. [مشاهده کانال](https://www.youtube.com/@qadiryolme8905)
+12. **قدیر یلمه** — هک و امنیت. [مشاهده کانال](https://www.youtube.com/%40qadiryolme/videos)
 13. **امیراحمد ادیبی** — Dart و Java. [مشاهده کانال](https://www.youtube.com/@amirahmadadibi4839)
 14. **سیاوش محمودیان** — طراحی وب. [مشاهده کانال](https://www.youtube.com/@Syavash)
-15. **رضا دولتی** — Python، طراحی وب و Django. [مشاهده کانال](https://www.youtube.com/@rezadolati0101)
-16. **اشکان رحمانی** — Git و توسعه نرم‌افزار. [مشاهده کانال](https://www.youtube.com/@HappyDeveloper)
-17. **ویژن آکادمی** — Python، Django و C#. [مشاهده کانال](https://www.youtube.com/@VisionAcademyTutorials)
-18. **ایدینیسم** — هوش مصنوعی و موضوعات مرتبط. [مشاهده کانال](https://www.youtube.com/@AidinEslami)
-19. **دواپس هابیز** — کانال مرتبط با DevOps؛ برای دوره مشخص، پلی‌لیست‌های کانال را بررسی کنید. [مشاهده کانال](https://www.youtube.com/@devopshobbies)
-20. **مرتضی باشسیز** — کانال مرتبط با Linux و DevOps. [مشاهده کانال](https://www.youtube.com/@MortezaBashsiz)
+15. **اشکان رحمانی** — Git و توسعه نرم‌افزار. [مشاهده کانال](https://www.youtube.com/@HappyDeveloper)
+16. **ویژن آکادمی** — Python، Django و C#. [مشاهده کانال](https://www.youtube.com/@VisionAcademyTutorials)
+17. **ایدینیسم** — هوش مصنوعی و موضوعات مرتبط. [مشاهده کانال](https://www.youtube.com/@AidinEslami)
+18. **دواپس هابیز** — کانال مرتبط با DevOps؛ برای دوره مشخص، پلی‌لیست‌های کانال را بررسی کنید. [مشاهده کانال](https://www.youtube.com/@devopshobbies)
+19. **مرتضی باشسیز** — کانال مرتبط با Linux و DevOps. [مشاهده کانال](https://www.youtube.com/@MortezaBashsiz)
 
 ## پیشنهاد کانال جدید
 
