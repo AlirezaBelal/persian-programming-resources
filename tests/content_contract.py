@@ -61,7 +61,9 @@ def check(root):
         if not path.is_file():
             continue
         allowed = (path.suffix == ".md" or str(rel) in {"LICENSE", ".gitignore"}
-                   or (rel.parts[0] == "tests" and path.suffix == ".py")
+                   or (rel.parts[0] == "docs" and path.suffix in {".html", ".css", ".js", ".svg", ".json"})
+                   or str(rel) == "scripts/build_pages.py"
+                   or (rel.parts[0] == "tests" and path.suffix in {".py", ".cjs"})
                    or (rel.parts[0] == ".github" and path.suffix in {".yml", ".yaml"}))
         if not allowed:
             errors.append(f"{rel}: unexpected file type; keep third-party material outside the repository")
