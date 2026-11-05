@@ -66,3 +66,9 @@ python -m unittest discover -s tests -v
 [MIT](LICENSE) فقط متن و فراداده اصلی این مخزن را پوشش می‌دهد. کتاب‌ها، دوره‌ها و ویدیوهای معرفی‌شده تابع حقوق و شرایط صاحبان خود هستند. عمومی یا متن‌بازبودن مخزن میزبان، به‌تنهایی مجوز ترجمه یا بازنشر اثر اصلی نیست.
 
 </div>
+
+## Live browser demo
+
+[Open the GitHub Pages demo](https://alirezabelal.github.io/persian-programming-resources/)
+
+The directory searches and filters the repository’s maintained public catalog by category and resource type. Links open the attributed source resources; the site adds no catalog entries and uses no visitor tracking.
