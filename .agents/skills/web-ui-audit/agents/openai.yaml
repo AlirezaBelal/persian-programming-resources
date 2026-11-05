@@ -1,0 +1,4 @@
+interface:
+  display_name: Web UI Audit
+  short_description: Run terse file:line audits against web UI implementation guidelines.
+  default_prompt: Use Web UI Audit to review the target UI files and report concrete implementation issues.

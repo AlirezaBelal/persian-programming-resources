@@ -1,0 +1,38 @@
+{
+  "audit": {
+    "description": "Run technical design-quality checks across accessibility, performance, theming, responsive behavior, and anti-patterns. Generates a scored report with severity ratings and an actionable plan.",
+    "argumentHint": "[area (feature, page, component...)]"
+  },
+  "critique": {
+    "description": "Evaluate a design from a UX perspective: visual hierarchy, information architecture, emotional resonance, cognitive load, persona fit, and overall quality.",
+    "argumentHint": "[area (feature, page, component...)]"
+  },
+  "polish": {
+    "description": "Perform a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping.",
+    "argumentHint": "[target]"
+  },
+  "harden": {
+    "description": "Make interfaces production-ready: error handling, i18n, text overflow, edge-case management, and resilience under real-world data.",
+    "argumentHint": "[target]"
+  },
+  "layout": {
+    "description": "Improve layout, spacing, visual rhythm, alignment, density, and hierarchy.",
+    "argumentHint": "[target]"
+  },
+  "typeset": {
+    "description": "Improve typography by fixing font choices, hierarchy, sizing, weight, and readability.",
+    "argumentHint": "[target]"
+  },
+  "colorize": {
+    "description": "Add strategic color to monochromatic, gray, dull, or under-committed interfaces.",
+    "argumentHint": "[target]"
+  },
+  "clarify": {
+    "description": "Improve unclear UX copy, labels, instructions, empty states, and error messages.",
+    "argumentHint": "[target]"
+  },
+  "distill": {
+    "description": "Strip an interface to its essence by removing unnecessary complexity, noise, and redundant elements.",
+    "argumentHint": "[target]"
+  }
+}

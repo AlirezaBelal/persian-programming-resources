@@ -1,0 +1,4 @@
+interface:
+  display_name: Design
+  short_description: Review and refine frontend UI quality, UX, layout, typography, color, copy, and production edge cases.
+  default_prompt: Use Design to audit, critique, polish, harden, or refine this frontend.
