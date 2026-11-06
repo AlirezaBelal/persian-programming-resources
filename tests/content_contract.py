@@ -71,7 +71,7 @@ def check(root):
             if hashlib.sha256(path.read_bytes()).hexdigest() != licensed_assets[rel_name]:
                 errors.append(f"{rel}: pinned licensed font asset integrity mismatch")
             continue
-        allowed = (path.suffix == ".md" or str(rel) in {"LICENSE", ".gitignore"}
+        allowed = (path.suffix == ".md" or str(rel) in {"LICENSE", ".gitignore", ".gitattributes"}
                    or (rel.parts[0] == "docs" and path.suffix in {".html", ".css", ".js", ".svg", ".json"})
                    or rel_name == "scripts/build_pages.py"
                    or rel_name in {"skills-lock.json", "tests/product-visual-qa.mjs"}
