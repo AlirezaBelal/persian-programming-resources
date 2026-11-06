@@ -18,6 +18,7 @@ try{for(const width of [320,375,390,768,1024,1440,1920]){
  const context=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const page=await context.newPage();const errors=[],bad=[],requests=[];
  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('response',r=>{if(r.status()>=400)bad.push([r.status(),r.url()]);});page.on('request',r=>requests.push(r.url()));
  await page.goto(url,{waitUntil:'networkidle'});await ready(page);
+ assert(await page.locator('.hero-art img').evaluate(e=>Math.abs(e.clientWidth/e.clientHeight-e.naturalWidth/e.naturalHeight)<.02),'illustration aspect ratio');
  assert.equal(await page.locator('html').getAttribute('dir'),'rtl');assert.equal(await page.locator('h1').count(),1);assert.match(await page.title(),/مسیر یادگیری/);
  assert(await page.locator('h1').evaluate(e=>parseFloat(getComputedStyle(e).fontSize)<=56));assert(await page.evaluate(()=>document.fonts.check('16px Vazirmatn')),'local font');
  assert.equal(await page.locator('#count').textContent(),new Intl.NumberFormat('fa-IR').format(catalog.resources.length));assert.equal(await page.locator('.resource').count(),12);
