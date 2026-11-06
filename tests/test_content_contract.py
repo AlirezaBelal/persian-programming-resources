@@ -103,6 +103,16 @@ class ContentContractTests(unittest.TestCase):
         self.assertTrue(any('book.pdf: unexpected file type' in e for e in errors))
         self.assertTrue(any('malformed Markdown link' in e for e in errors))
 
+    def test_font_exception_rejects_unreviewed_binary_content(self):
+        font=self.root/'docs/fonts/Vazirmatn.woff2'
+        font.parent.mkdir(parents=True,exist_ok=True)
+        font.write_bytes(b'synthetic-not-a-font')
+        self.assertTrue(any('font asset integrity mismatch' in e for e in check(self.root)))
+
+    def test_skill_config_exception_rejects_unreviewed_sources(self):
+        (self.root/'skills-lock.json').write_text('{"skills":{"design":{"source":"unreviewed"}}}',encoding='utf-8')
+        self.assertTrue(any('unreviewed skill configuration' in e for e in check(self.root)))
+
 
 if __name__ == '__main__':
     unittest.main()
