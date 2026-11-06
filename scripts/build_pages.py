@@ -64,7 +64,7 @@ def parse_source(text, source, category, default_kind):
         prefix=line[:first.start()]
         channel=re.match(r'^\s*\d+\.\s+\*\*(.+?)\*\*\s*[—–:-]\s*(.*)',prefix)
         title=clean(channel[1] if channel else first['title'])
-        description=clean(channel[2] if channel else line[first.end():])
+        description=clean(channel[2] if channel else line[first.end():]).replace('[مجوز ترجمه نیازمند بررسی]', '').strip()
         if not title or not heading:
             raise ValueError(f'{source}:{number}: resource title or topic missing')
         key=(first['url'],heading)

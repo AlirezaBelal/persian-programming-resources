@@ -37,7 +37,7 @@ try{for(const width of [320,375,390,768,1024,1440,1920]){
  await page.locator('#reset').click();const violations=await inspect(page,'product',width);
  // Combined controls and populated results are checked at every requested viewport.
  assert.equal(await page.locator('#summary').getAttribute('role'),'status');assert.equal(await page.locator('#summary').getAttribute('aria-live'),'polite');
- if(width===375||width===1440){await page.locator('#query').fill('گیت');await page.locator('#directory').screenshot({path:out+'/directory-'+width+'.png'});await page.locator('#reset').click();}
+ if(width===375||width===1440){await page.locator('#query').fill('گیت');await page.locator('#directory').screenshot({path:out+'/directory-'+width+'.png'});if(width===1440){await page.locator('#directory').scrollIntoViewIfNeeded();await page.screenshot({path:out+'/portfolio-preview.png',fullPage:false});}await page.locator('#reset').click();}
  assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);const external=requests.filter(u=>/^https?:/.test(u)&&new URL(u).origin!==new URL(url).origin);assert.deepEqual(external,[],'unexpected external calls');
  reports.push({width,url,overflow:'passed',search:'passed',categoryTypeTopic:'passed',reset:'passed',pagination:'passed',keyboard:'passed',accessibilityViolations:violations,external,browserErrors:errors,hero:await page.locator('h1').evaluate(e=>getComputedStyle(e).fontSize)});
  await context.close();
