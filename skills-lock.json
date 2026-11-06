@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "skills": {
+    "design": {
+      "source": "yikZero/skills",
+      "sourceType": "github",
+      "skillPath": "skills/design/SKILL.md",
+      "computedHash": "eaf16757d4f23c703ece1977751b2acde4bc903393839bf3143c9e330a0bfd8b",
+      "ref": "5e85045d96662605f33e12150cdc6d00cb04dc0a"
+    },
+    "web-ui-audit": {
+      "source": "yikZero/skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-ui-audit/SKILL.md",
+      "computedHash": "ea00a162fb91a43b603e217333bf980b90fc30c8b25bdce4e479ac2e4b3d0e82",
+      "ref": "5e85045d96662605f33e12150cdc6d00cb04dc0a"
+    }
+  }
+}

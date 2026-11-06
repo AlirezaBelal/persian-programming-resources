@@ -1,6 +1,8 @@
 """Offline checks for repository structure, local links, and obvious unsafe content."""
 
 from pathlib import Path
+import hashlib
+import json
 import re
 import sys
 from urllib.parse import parse_qsl, unquote, urlsplit
@@ -60,9 +62,19 @@ def check(root):
             continue
         if not path.is_file():
             continue
+        rel_name = rel.as_posix()
+        licensed_assets = {
+            'docs/fonts/Vazirmatn.woff2': '4e3fa217d38fdafc1fea4414ceb58ca5e662cf0ab5fa735a8c8c20e8b42cad92',
+            'docs/fonts/OFL.txt': '17e355067c8284f47743a1ee3b1ef7ff684ff0601eda357f9353b10b3016ab31',
+        }
+        if rel_name in licensed_assets:
+            if hashlib.sha256(path.read_bytes()).hexdigest() != licensed_assets[rel_name]:
+                errors.append(f"{rel}: pinned licensed font asset integrity mismatch")
+            continue
         allowed = (path.suffix == ".md" or str(rel) in {"LICENSE", ".gitignore"}
                    or (rel.parts[0] == "docs" and path.suffix in {".html", ".css", ".js", ".svg", ".json"})
-                   or str(rel) == "scripts/build_pages.py"
+                   or rel_name == "scripts/build_pages.py"
+                   or rel_name in {"skills-lock.json", "tests/product-visual-qa.mjs"}
                    or (rel.parts[0] == "tests" and path.suffix in {".py", ".cjs"})
                    or (rel.parts[0] == ".github" and path.suffix in {".yml", ".yaml"}))
         if not allowed:
@@ -73,6 +85,16 @@ def check(root):
         except (UnicodeError, OSError):
             errors.append(f"{rel}: cannot read valid UTF-8 text")
             continue
+        if rel_name == 'skills-lock.json':
+            try:
+                lock = json.loads(text)
+                if set(lock.get('skills', {})) != {'design', 'web-ui-audit'} or any(
+                    item.get('source') != 'yikZero/skills' or item.get('ref') != '5e85045d96662605f33e12150cdc6d00cb04dc0a'
+                    for item in lock['skills'].values()
+                ):
+                    errors.append('skills-lock.json: unreviewed skill configuration')
+            except (ValueError, KeyError, TypeError):
+                errors.append('skills-lock.json: invalid configuration')
         texts[path] = text
         for number, line in enumerate(text.splitlines(), 1):
             if any(pattern.search(line) for pattern in SECRETS):

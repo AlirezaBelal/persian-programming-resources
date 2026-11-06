@@ -1,3 +1,10 @@
 .idea
 __pycache__/
 *.py[cod]
+
+# Generated from the five Markdown catalogs at build time
+/docs/resources.json
+/docs/.catalog-*.tmp
+# Local development tooling stays outside the catalog
+/node_modules/
+/.agents/

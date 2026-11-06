@@ -1,0 +1,64 @@
+name: Masir Yadgiri browser QA
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify generated catalog before browser tests
+        run: |
+          python3 scripts/build_pages.py
+          python3 tests/content_contract.py
+          python3 scripts/build_pages.py --check
+          node --test tests/browser-demo.test.cjs
+      - name: Install isolated browser tooling
+        run: |
+          mkdir -p "$RUNNER_TEMP/masir-qa"
+          cp tests/product-visual-qa.mjs "$RUNNER_TEMP/masir-qa/run.mjs"
+          npm install --prefix "$RUNNER_TEMP/masir-qa" --no-save --package-lock=false playwright@1.56.1 @axe-core/playwright@4.10.2
+          "$RUNNER_TEMP/masir-qa/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Serve standalone directory
+        run: python3 -m http.server 8765 --directory docs > /tmp/masir-site.log 2>&1 &
+      - name: Seven-width real directory and accessibility QA
+        env:
+          QA_OUTPUT: ${{ runner.temp }}/masir-evidence
+        run: node "$RUNNER_TEMP/masir-qa/run.mjs"
+      - name: Verify exact production release and real live interactions
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUTPUT: ${{ runner.temp }}/masir-evidence/production
+          PRODUCT_URL: https://alirezabelal.github.io/masir-yadgiri/
+        run: |
+          node --input-type=module <<'JS'
+          import {readFile} from 'node:fs/promises';
+          const paths=['index.html','style.css','app.js','resources.json'];
+          const expected=await Promise.all(paths.map(p=>readFile('docs/'+p,'utf8')));
+          const normalize=s=>s.replace(/\r\n/g,'\n').replace(/^\uFEFF/,'');
+          let ready=false;
+          for(let attempt=0;attempt<120;attempt++){
+            try{const actual=await Promise.all(paths.map(async p=>{const r=await fetch(process.env.PRODUCT_URL+p+'?qa='+Date.now());if(!r.ok)throw Error('HTTP '+r.status);return r.text();}));if(actual.every((s,i)=>normalize(s)===normalize(expected[i]))){ready=true;break;}}catch{}
+            await new Promise(r=>setTimeout(r,10000));
+          }
+          if(!ready)throw Error('Production does not match this release');
+          JS
+          node "$RUNNER_TEMP/masir-qa/run.mjs"
+      - name: Save public catalog QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: masir-directory-qa-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/masir-evidence/
+          retention-days: 14

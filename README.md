@@ -1,12 +1,17 @@
 <div dir="rtl">
 
-# منابع رایگان برنامه‌نویسی فارسی
+# مسیر یادگیری | منابع برنامه‌نویسی فارسی
 
 فهرستی منتخب از کتاب، متن آموزشی، دوره و کانال برای فارسی‌زبان‌هایی که می‌خواهند برنامه‌نویسی یا مهارت فنی تازه‌ای یاد بگیرند. از یک موضوع و یک منبع شروع کنید؛ این فهرست جای تمرین و ساخت پروژه را نمی‌گیرد.
 
-[![کنترل محتوا](https://github.com/AlirezaBelal/persian-programming-resources/actions/workflows/content-integrity.yml/badge.svg)](https://github.com/AlirezaBelal/persian-programming-resources/actions/workflows/content-integrity.yml)
+[![کنترل محتوا](https://github.com/AlirezaBelal/masir-yadgiri/actions/workflows/content-integrity.yml/badge.svg)](https://github.com/AlirezaBelal/masir-yadgiri/actions/workflows/content-integrity.yml)
 
 > **وضعیت بررسی — ۲۲ اکتبر ۲۰۲۶:** عنوان‌ها، دسته‌بندی‌ها و پیوندهای داخلی مرور شده‌اند؛ دسترسی کامل، رایگان‌بودن و مجوز همه منابع خارجی تأیید نشده است. وضعیت نامطمئن در هر صفحه مشخص شده؛ موفقیت CI فقط سلامت ساختار فهرست را نشان می‌دهد.
+
+
+[کاوش در مسیر یادگیری](https://alirezabelal.github.io/masir-yadgiri/) · [پیشنهاد منبع](https://github.com/AlirezaBelal/masir-yadgiri/issues/new?template=resource.yml)
+
+در رابط وب، عنوان، توضیح یا موضوع را جست‌وجو کنید و فیلترهای دسته، قالب و موضوع را ترکیب کنید. هر کارت به منبع اصلی و خط متناظر در فهرست مخزن پیوند دارد. این محصول یک فهرست واقعی از منابع نگهداری‌شده است؛ دوره یا فایل آموزشی را میزبانی نمی‌کند. جست‌وجو در مرورگر انجام می‌شود و هیچ حساب کاربری یا ردیابی وجود ندارد.
 
 ## دسترسی سریع
 
@@ -46,20 +51,32 @@
 
 ## مشارکت و گزارش مشکل
 
-برای پیشنهاد منبع از [فرم فارسی](https://github.com/AlirezaBelal/persian-programming-resources/issues/new?template=resource.yml) و [راهنمای مشارکت](CONTRIBUTING.md) استفاده کنید. پیشنهادها پس از بررسی پذیرفته می‌شوند، نه خودکار.
+برای پیشنهاد منبع از [فرم فارسی](https://github.com/AlirezaBelal/masir-yadgiri/issues/new?template=resource.yml) و [راهنمای مشارکت](CONTRIBUTING.md) استفاده کنید. پیشنهادها پس از بررسی پذیرفته می‌شوند، نه خودکار.
 
 برای لینک خراب، تغییر هزینه یا دسته‌بندی اشتباه، Issue یا PR بفرستید و نام منبع، URL عمومی و مشکل مشاهده‌شده را بنویسید. اطلاعات خصوصی یا اعتبارنامه را در گزارش عمومی نگذارید؛ [راهنمای امنیت](SECURITY.md) و [قواعد همکاری](CODE_OF_CONDUCT.md) را ببینید.
 
 برای شیوهٔ رسیدگی دوره‌ای به لینک‌ها، تفکیک ادعای «رایگان»، بررسی حقوق ترجمه و گزارش نتایج، [راهنمای نگهداری و ممیزی](MAINTENANCE.md) را ببینید.
 
-کنترل محلی، بدون اینترنت یا نصب وابستگی:
+کنترل محلی با Python 3.9 یا جدیدتر و Node.js 22، بدون وابستگی اجرایی اضافه:
 
 ```bash
+python scripts/build_pages.py
+python scripts/build_pages.py --check
 python tests/content_contract.py
 python -m unittest discover -s tests -v
+node --test tests/browser-demo.test.cjs
+python -m http.server 8765 --directory docs
 ```
 
 این کنترل‌ها فایل‌ها، UTF-8، لینک‌های نسبی، شناسه تیترها، پیوندهای مشکوک دارای پارامتر محرمانه، HTML فعال و الگوهای آشکار ناامن را بررسی می‌کنند؛ درباره کیفیت آموزشی، دسترسی خارجی یا حقوق نشر تصمیم نمی‌گیرند. هیچ بررسی خودکارِ اتصال به سایت‌های آموزشی در CI انجام نمی‌شود تا خطاهای منطقه‌ای و محدودیت درخواست‌ها به اشتباه «خرابی» تلقی نشود.
+
+## ساخت و انتشار وب‌سایت
+
+پنج README دسته‌ها تنها منبع نگهداری فهرست‌اند. `scripts/build_pages.py` کاتالوگ قطعی `docs/resources.json` را می‌سازد؛ توضیح، موضوع، وضعیت و شماره خط از همان Markdown استخراج می‌شوند. پس از ویرایش منابع، مولد را اجرا کنید؛ JSON خروجی تولیدشده است و دستی نگهداری یا در Git ثبت نمی‌شود. `--check` اختلاف با منابع و داده کهنه را رد می‌کند؛ خطای ساخت، انتشار را متوقف می‌کند.
+
+Pages با هر PR و تغییر شاخه `master` بررسی می‌شود؛ تغییر هر یک از پنج فهرست هم این جریان را فعال می‌کند. هر ساخت، داده را دوباره از Markdown تولید می‌کند؛ پس از کنترل محتوا و آزمون‌ها، فقط `docs/` منتشر می‌شود. CI از ناشران آموزشی درخواست شبکه نمی‌فرستد و سلامت ساختار را با تأیید دسترسی، هزینه یا مجوز اشتباه نمی‌گیرد.
+
+برند رسمی «مسیر یادگیری» و نام لاتین آن **Masir Yadgiri** است. نام مخزن پیشین `persian-programming-resources` بوده؛ GitHub پیوندهای مخزن تغییرنام‌یافته را هدایت می‌کند، اما هدایت نشانی قدیمی Pages خودکار نیست. نشانی معتبر محصول `https://alirezabelal.github.io/masir-yadgiri/` است. مسیر قدیمی صفحه معرفی در پورتفولیو برای سازگاری حفظ می‌شود.
 
 ## مجوز و حقوق نشر
 
@@ -67,8 +84,3 @@ python -m unittest discover -s tests -v
 
 </div>
 
-## Live browser demo
-
-[Open the GitHub Pages demo](https://alirezabelal.github.io/persian-programming-resources/)
-
-The directory searches and filters the repository’s maintained public catalog by category and resource type. Links open the attributed source resources; the site adds no catalog entries and uses no visitor tracking.
