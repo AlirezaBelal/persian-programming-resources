@@ -105,7 +105,7 @@ def serialize(catalog):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--check',action='store_true',help='Fail if committed resources.json differs from tracked sources')
+    parser.add_argument('--check',action='store_true',help='Fail if generated resources.json differs from tracked sources')
     args=parser.parse_args()
     expected=serialize(build_catalog()); output=ROOT/'docs/resources.json'
     if args.check:

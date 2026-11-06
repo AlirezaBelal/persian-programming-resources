@@ -3,7 +3,7 @@ const CATEGORIES=['کتاب‌ها','دوره‌ها','دوره‌های آمو�
 const KINDS=['کتاب و متن','دوره','ویدیو','کانال','منبع تکمیلی'];
 const SOURCE_PATHS=['کتاب‌ها/README.md','دوره‌ها/README.md','دوره‌های آموزشی در یوتیوب/README.md','کانال‌های یوتیوب/README.md','منابع-تکمیلی/README.md'];
 const REPOSITORY='https://github.com/AlirezaBelal/masir-yadgiri';
-const TOPIC_ALIASES={'پایتون':'python','جاوااسکریپت':'javascript js','گیت':'git','جنگو':'django','ری‌اکت':'react','ریکت':'react','ویو':'vue','گو':'golang','لینوکس':'linux','هوش مصنوعی':'ai machine learning','سی‌اس‌اس':'css','سی پلاس پلاس':'c++','سی شارپ':'c#','تایپ اسکریپت':'typescript','لاراول':'laravel','راست':'rust'};
+const TOPIC_ALIASES={'جاوا':'java','پایتون':'python','جاوااسکریپت':'javascript js','گیت':'git','جنگو':'django','ری‌اکت':'react','ریکت':'react','ویو':'vue','گو':'golang','لینوکس':'linux','هوش مصنوعی':'ai machine learning','سی‌اس‌اس':'css','سی پلاس پلاس':'c++','سی شارپ':'c#','تایپ اسکریپت':'typescript','لاراول':'laravel','راست':'rust'};
 function normalize(value){return String(value??'').normalize('NFKC').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u064b-\u065f\u0670]/g,'').replace(/\u200c/g,' ').toLocaleLowerCase('fa-IR').replace(/\s+/g,' ').trim();}
 function safeUrl(value){try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password&&!/[\s<>"\u0000-\u001f]/u.test(value)&&![...u.searchParams.keys()].some(k=>['token','password','secret','api_key','apikey','access_token','authorization','auth','client_secret','signature'].includes(k.toLowerCase()))&&!['t.me','telegram.me','mega.nz','mediafire.com'].some(h=>u.hostname===h||u.hostname.endsWith('.'+h));}catch{return false;}}
 function validateCatalog(data){
@@ -16,7 +16,7 @@ function validateCatalog(data){
 function filterResources(records,{query='',category='all',kind='all',topic='all'}={}){
  const terms=normalize(query).split(' ').filter(Boolean);
  return records.filter(r=>{if(category!=='all'&&r.category!==category||kind!=='all'&&r.kind!==kind||topic!=='all'&&r.topic!==topic)return false;
- const aliases=Object.entries(TOPIC_ALIASES).filter(([key])=>normalize(r.topic).includes(normalize(key))).map(([,value])=>value).join(' ');
+ const aliases=Object.entries(TOPIC_ALIASES).filter(([key])=>(' '+normalize(r.topic)+' ').includes(' '+normalize(key)+' ')).map(([,value])=>value).join(' ');
  const haystack=normalize([r.title,r.description,r.topic,r.category,r.kind,r.publisher,...r.flags,aliases].join(' '));return terms.every(term=>haystack.includes(term));});
 }
 function sourceUrl(record){return REPOSITORY+'/blob/master/'+record.source.split('/').map(encodeURIComponent).join('/')+'#L'+record.sourceLine;}

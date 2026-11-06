@@ -48,3 +48,11 @@ test('channel identity, access notes and related source links remain meaningful'
  assert.ok(catalog.resources.some(r=>r.flags.includes('نشانی نیازمند بررسی')));
  assert.ok(catalog.resources.some(r=>r.relatedLinks.some(l=>l.url==='https://docs.docker.com/ai/sandboxes/cloud/')));
 });
+
+
+test('short topic aliases do not leak into unrelated Persian words',()=>{
+ const golang=d.filterResources(catalog.resources,{query:'golang'});
+ assert.ok(golang.length>0);
+ assert.ok(golang.every(r=>r.topic==='گو'));
+ assert.ok(d.filterResources(catalog.resources,{query:'java',category:'دوره‌ها',topic:'جاوا'}).length>0);
+});
